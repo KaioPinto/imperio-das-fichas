@@ -1,0 +1,79 @@
+:root {
+    --dark: #1A1A1A;
+    --gold: #D4AF37;
+    --red: #DC143C;
+    --light: #F5F5F5;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+.cadastro {
+    background-color: var(--dark);
+}
+
+.cadastro__titulo {
+    font-weight: bold;
+    color: var(--gold);
+}
+
+.cadastro__subtitulo {
+    color: var(--light);
+}
+
+.cadastro__linha,
+.faq__linha {
+    width: 150px;
+    height: 3px;
+    background-color: var(--red);
+    opacity: 1;
+    border: none;
+}
+
+.cadastro__card {
+    background-color: var(--light);
+    border-radius: 15px;
+}
+
+.cadastro__label {
+    color: var(--dark);
+    font-weight: bold;
+    font-size: small;
+}
+
+.cadastro__icone {
+    color: var(--gold);
+}
+
+.cadastro__aviso {
+    color: #666;
+}
+
+.btn.cadastro__botao {
+    background-color: var(--red);
+    border-color: var(--red);
+    color: var(--light);
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.btn.cadastro__botao:hover {
+    background-color: #B91C3C;
+    color: var(--light);
+}
+
+.form-control.cadastro__input,
+.form-select.cadastro__input {
+    border: 2px solid var(--gold);
+    border-radius: 8px;
+    padding: 6px 8px;
+}
+
+.padrao-lp {
+    color: var(--dark);
+    border-radius: 8px;
+    max-width: 860px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}

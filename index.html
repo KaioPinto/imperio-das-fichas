@@ -4,21 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Império das Fichas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
-    <link href="./css/estilo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>Império das fichas</title>
 </head>
 
 <body>
-    <section>
-        <h1>Império das Fichas</h1>
-    </section>
 
+    <div class="padrao-lp cadastro container">
+        <section class="py-5" id="cadastro">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-sm-9 col-md-8 col-lg-6 col-xl-5">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+                        <div class="text-center mb-3">
+                            <h2 class="cadastro__titulo mb-2 fs-3">
+                                Cadastre-se e Ganhe 100 Fichas Grátis!
+                            </h2>
+                            <hr class="cadastro__linha mx-auto mb-2">
+                            <p class="cadastro__subtitulo small">
+                                Comece o jogo com vantagem e domine as partidas desde o primeiro dia
+                            </p>
+                        </div>
+
+                        <div class="card-body p-4 p-md-5 p-lg-5 cadastro__card">
+                            <form action="sucesso.html">
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label cadastro__label">
+                                        <i class="fas fa-user me-1 me-md-2 cadastro__icone"></i> Nome Completo
+                                    </label>
+                                    <input type="text" class="form-control form-control-sm cadastro__input" id="nome"
+                                        placeholder="Seu nome completo" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label cadastro__label">
+                                        <i class="fas fa-envelope me-1 me-md-2 cadastro__icone"></i> E-mail
+                                    </label>
+                                    <input type="email" class="form-control form-control-sm cadastro__input" id="email"
+                                        placeholder="seu@email.com" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label cadastro__label">
+                                        <i class="fas fa-phone me-1 me-md-2 cadastro__icone"></i> Telefone
+                                    </label>
+                                    <input type="tel" class="form-control form-control-sm cadastro__input" id="telefone"
+                                        placeholder="(99) 99999-9999">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="fonte" class="form-label cadastro__label">
+                                        <i class="fas fa-search me-1 me-md-2 cadastro__icone"></i> Como você
+                                        conheceu o Império das Fichas?
+                                    </label>
+                                    <select class="form-select form-select-sm cadastro__input" id="fonte" required>
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="redes-sociais">Redes sociais (Instagram, Facebook, TikTok)
+                                        </option>
+                                        <option value="indicacao">Indicação de amigos</option>
+                                        <option value="google">Busca no Google</option>
+                                        <option value="youtube">YouTube</option>
+                                        <option value="outros">Outros</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="novidades" checked>
+                                        <label class="form-check-label cadastro__label" for="novidades">
+                                            Quero receber novidades e promoções exclusivas por e-mail
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" class="btn px-4 py-2 small fs-sm-6 fs-md-5 cadastro__botao">
+                                        <i class="fas fa-gift me-1"></i>
+                                        Cadastrar
+                                    </button>
+                                </div>
+
+                                <div class="text-center mt-3">
+                                    <small class="cadastro__aviso">
+                                        <em>Suas fichas serão creditadas automaticamente após o cadastro no jogo</em>
+                                    </small>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
