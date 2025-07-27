@@ -53,7 +53,7 @@ main {
 
 /*Cards*/
 
-#secao-card-jogos .card {
+.card {
     width: 100%;
     max-width: 18rem;
     margin-left: auto;
@@ -61,36 +61,36 @@ main {
     min-height: 25rem;
 }
 
-#secao-card-jogos .card-img-top {
+.card-img-top {
     height: 10rem;
     object-fit: cover;
 }
 
-#secao-card-jogos .card-body {
+.card-body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     padding: 1rem;
 }
 
-#secao-card-jogos .card-body h5 {
+.card-body h5 {
     color: var(--gold);
     margin-bottom: 0.5rem;
 
 }
 
-#secao-card-jogos .card-body p {
+.card-body p {
     color: var(--black);
     flex-grow: 1;
 }
 
-#secao-card-jogos .card-body .btn {
+.card-body .btn {
     background-color: var(--wine);
     margin-top: auto;
 }
 
-#secao-card-jogos .card-body .btn-primary:active,
-#secao-card-jogos .card-body .btn-primary:focus,
-#secao-card-jogos .card-body .btn-primary:hover {
+.card-body .btn-primary:active,
+.card-body .btn-primary:active:focus,
+.card-body .btn:hover {
     background-color: var(--red);
 }
