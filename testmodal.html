@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link
+            href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <title>Império das fichas</title>
+    </head>
+    <body>
+        <main class="container text-center">
+
+            <div class="row" id="div-container-colum">
+                <div class="col-12">
+                    <h2 class="mb-4 mt-4" id="h2-titulo-section"> Nossas Opções
+                        de Entretenimento
+                    </h2>
+                </div>
+                <section class="col-12">
+                    <div
+                        class="row gy-4 justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="./assets/roleta.webp"
+                                    class="card-img-top" alt="Roleta Clássica">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roleta Clássica</h5>
+                                    <p class="card-text">Gire a roleta, faça sua
+                                        aposta e sinta a emoção de ganhar um
+                                        prêmio digno de sua sorte!</p>
+                                    <a href="#" class="btn btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modalCard1">Confira</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="./assets/black-jack.jpg"
+                                    class="card-img-top" alt="Black Jack">
+                                <div class="card-body">
+                                    <h5 class="card-title">Black Jack</h5>
+                                    <p class="card-text">Desafie o dealer, teste
+                                        sua estratégia e alcance o 21 para uma
+                                        grande vitória!</p>
+                                    <a href="#" class="btn btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modalCard2">Confira</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="./assets/roleta-cor.png"
+                                    class="card-img-top" alt="Roleta das Cores">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roletas das
+                                        Cores</h5>
+                                    <p class="card-text">Escolha sua cor da
+                                        sorte, gire a roleta e veja a emoção da
+                                        vitória colorir sua aposta!</p>
+                                    <a href="#" class="btn btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modalCard3">Confira</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="./assets/niquelzz.jpg"
+                                    class="card-img-top" alt="Caça-Níquel">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caça-Níquel</h5>
+                                    <p class="card-text">Puxe a alavanca, torça
+                                        pelos símbolos e descubra a emoção de
+                                        acertar um grande jackpot</p>
+                                    <a href="#" class="btn btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modalCard4">Saber
+                                        mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Apenas o conteúdo dos moldais -->
+
+        <!-- Primeiro molda: Roleta clássica -->
+        <div class="modal fade" id="modalCard1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="modalCard1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5"
+                            id="modalCard1Label">Detalhes da Roleta
+                            Clássica</h1>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-thumbnail"
+                            src="./assets/coleta-classica.avif" alt="roleta">
+                        <h4>Como funciona</h4>
+                        <p>
+                            A Roleta Clássica é um dos jogos de azar mais
+                            tradicionais e elegantes dos cassinos.
+                            Neste modo simplificado, o jogador aposta se o
+                            número sorteado será <strong>par</strong> ou
+                            <strong>ímpar</strong>.
+                        </p>
+                        <p>
+                            Para jogar, basta escolher uma das opções — par ou
+                            ímpar — e definir o valor que deseja apostar.
+                            Em seguida, a roleta é girada e uma bola é lançada
+                            sobre ela, caindo aleatoriamente em um dos números
+                            do disco.
+                        </p>
+                        <p>
+                            Se o número sorteado corresponder ao tipo que você
+                            escolheu (por exemplo, você apostou em “ímpar” e
+                            caiu 17), você vence a rodada e recebe <strong>2x o
+                                valor apostado</strong> de volta.
+                        </p>
+                        <p>
+                            É um jogo rápido, simples e cheio de adrenalina.
+                            Basta confiar na sua intuição, fazer sua aposta e
+                            torcer para a roleta girar a seu favor!
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segundo molda: Black Jack -->
+        <div class="modal fade" id="modalCard2"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="modalCard2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5"
+                            id="modalCard2Label">Detalhes do Black Jack</h1>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-thumbnail" src="./assets/black-jack.jpg"
+                            alt="roleta">
+                        <h4>Como funciona</h4>
+                        <p>
+                            O Blackjack, também conhecido como 21, é um dos
+                            jogos de cartas mais clássicos e populares dos
+                            cassinos.
+                            O objetivo é simples: somar cartas que cheguem o
+                            mais próximo possível de 21, sem ultrapassar esse
+                            valor.
+                        </p>
+                        <p>
+                            Cada jogador recebe duas cartas, assim como o dealer
+                            (a "banca").
+                            As cartas numéricas valem seu número correspondente,
+                            as figuras (Valete, Dama e Rei) valem 10 pontos, e o
+                            Ás pode valer 1 ou 11, dependendo do que for mais
+                            vantajoso para a sua mão.
+                        </p>
+                        <p>
+                            Durante a rodada, você pode escolher entre pedir
+                            mais cartas ("Hit") ou parar ("Stand").
+                            O objetivo é tentar vencer o dealer fazendo uma
+                            pontuação maior que a dele — sem passar de 21.
+                            Se você ultrapassar esse valor, perde
+                            automaticamente ("estoura").
+                        </p>
+                        <p>
+                            Se a sua pontuação for maior que a do dealer, ou se
+                            ele estourar e você não, você ganha a rodada e
+                            recebe <strong>2x o valor apostado</strong>.
+                            É um jogo de estratégia e emoção, onde cada decisão
+                            pode ser a chave para a vitória!
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terciero modal: Roleta das Cores -->
+        <div class="modal fade" id="modalCard3"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="modalCard3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5"
+                            id="modalCard3Label">Detalhes da Roleta das
+                            Cores</h1>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-thumbnail"
+                            src="./assets/roleta-cor.png" alt="roleta">
+                        <h4>Como funciona</h4>
+                        <p>
+                            A Roleta das Cores é um jogo simples, rápido e
+                            baseado totalmente na sorte.
+                            Para jogar, você escolhe uma das quatro cores
+                            disponíveis: <strong>vermelho</strong>,
+                            <strong>azul</strong>, <strong>amarelo</strong> ou
+                            <strong>verde</strong>.
+                            Depois disso, você define o valor da sua aposta e
+                            gira a roleta.
+                        </p>
+                        <p>
+                            Quando a roleta parar, a cor sorteada será revelada.
+                            Se for exatamente a cor que você escolheu, você
+                            vence a rodada e recebe <strong>2x o valor
+                                apostado</strong> direto no seu saldo.
+                            Por exemplo, se apostar R$20 na cor azul e ela for
+                            sorteada, você ganha R$40!
+                        </p>
+                        <p>
+                            É uma maneira divertida de testar sua sorte com
+                            mecânica simples e visual chamativo. Escolha sua cor
+                            preferida, gire a roleta e torça para ela parar na
+                            sua aposta. Boa sorte!
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quarto molda: Caça -->
+        <div class="modal fade" id="modalCard4"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="modalCard4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5"
+                            id="modalCard4Label">Detalhes do Caça-Níquel</h1>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-thumbnail"
+                            src="./assets/niquel.jpg" alt="roleta">
+                        <h4>Como funciona</h4>
+                        <p>
+                            O caça-níquel é uma máquina de sorte que oferece uma
+                            experiência emocionante e simples de jogar.
+                            Neste jogo, você pode apostar um valor do seu saldo
+                            e tentar a sorte girando os rolos da máquina.
+                            Existem três combinações principais que podem
+                            garantir sua vitória: <strong>cereja</strong>,
+                            <strong>estrela</strong> e
+                            <strong>diamante</strong>.
+                            Cada uma dessas combinações representa uma chance de
+                            ganhar o dobro do valor apostado.
+                        </p>
+                        <p>
+                            Ao iniciar a rodada, os símbolos giram e param
+                            aleatoriamente.
+                            Se o resultado for a combinação exata do símbolo em
+                            que você apostou, você recebe <strong>2x o valor
+                                apostado</strong> direto no seu saldo.
+                            Por exemplo, se apostar R$10 e a combinação sorteada
+                            for a que você escolheu, você receberá R$20!
+                        </p>
+                        <p>
+                            É um jogo de pura sorte, rápido, dinâmico e perfeito
+                            para quem busca diversão e a possibilidade de
+                            multiplicar os ganhos em poucos segundos.
+                            Faça sua aposta, escolha seu símbolo da sorte e boa
+                            sorte no giro!
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>

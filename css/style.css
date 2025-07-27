@@ -1,0 +1,98 @@
+/* Seu arquivo style.css */
+
+:root {
+    --cor-fundo-pagina: #222831;
+    --cor-letras: #dfe0df;
+    --cor-test: #A18C9E;
+    --cor-outra: #A18C9E;
+    --cor-la: #a379a1;
+    --aa: #A18C9E;
+    --exo: #270148;
+    --gold: #D4AF37;
+    --wine: #4B0C1E;
+    --red: #B1212F;
+    --felt-green: #146B3A;
+    --black: #1A1A1A;
+    --neon-purple: #7A1AFF;
+    --neon-blue: #1AC1FF;
+    --white: #f5f5f5;
+    --vermelho: #F20C0C;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(--cor-fundo-pagina);
+    color: var(--cor-letras);
+
+}
+
+main {
+    color: var(--gold);
+    border-radius: 8px;
+    max-width: 860px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cor-fundo-pagina);
+    overflow-y: scroll;
+
+}
+
+#div-container-colum {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+#h2-titulo-section {
+    color: var(--gold);
+
+}
+
+/*Cards*/
+
+.card {
+    width: 100%;
+    max-width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 25rem;
+}
+
+.card-img-top {
+    height: 10rem;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.card-body h5 {
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+
+}
+
+.card-body p {
+    color: var(--black);
+    flex-grow: 1;
+}
+
+.card-body .btn {
+    background-color: var(--wine);
+    margin-top: auto;
+}
+
+.card-body .btn-primary:active,
+.card-body .btn-primary:active:focus,
+.card-body .btn:hover {
+    background-color: var(--red);
+}
