@@ -209,7 +209,7 @@ h2,
   color: var(--cor-letras);
 }
 
-.modal-body > h4 {
+.modal-body>h4 {
   padding-top: 10px;
 }
 
@@ -228,10 +228,10 @@ h2,
 }
 
 /* Fix para mesma altura dos cards */
-.row-cols-1 > .col,
-.row-cols-sm-2 > .col,
-.row-cols-md-3 > .col,
-.row-cols-lg-4 > .col {
+.row-cols-1>.col,
+.row-cols-sm-2>.col,
+.row-cols-md-3>.col,
+.row-cols-lg-4>.col {
   display: flex;
   flex-direction: column;
 }
@@ -380,11 +380,9 @@ body {
 
 .premios__destaque {
   margin-bottom: 20px;
-  background: linear-gradient(
-    45deg,
-    var(--cor-secundaria),
-    var(--cor-fundo-clara)
-  );
+  background: linear-gradient(45deg,
+      var(--cor-secundaria),
+      var(--cor-fundo-clara));
   padding: 15px;
   border-radius: 4px;
   display: inline-block;
@@ -397,12 +395,75 @@ body {
   font-family: "Times New Roman", serif;
 }
 
+
+
+/* Requisitos */
+
+.requisitos-section {
+  background-color: #1A1A1A;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.requisitos-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.requisitos-section .titulo {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #D4AF37;
+  /* Ouro */
+}
+
+.requisitos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.requisito-card {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.requisito-card:hover {
+  transform: scale(1.03);
+  border-color: #D4AF37;
+}
+
+.requisito-card img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.requisito-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #FFD700;
+}
+
+.requisito-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+
+
+
+
+
+
 /* ==== FAQ e CADASTRO ==== */
 
 /*Cadastro*/
-
-.cadastro {
-  background-color: var(--cor-fundo-pagina);
+#cadastro {
+  margin-top: 5rem;
 }
 
 .cadastro__subtitulo {
@@ -507,6 +568,10 @@ body {
   border-radius: 4px;
 }
 
+
+/* Footer */
+
+
 .footer-cassino {
   background-color: #111;
   color: #ccc;
@@ -600,7 +665,6 @@ body {
 .footer-bottom a:hover {
   color: #fff;
 }
-
 /* Responsividade */
 @media (max-width: 968px) {
   .banner {
