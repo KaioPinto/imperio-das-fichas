@@ -10,11 +10,16 @@
   --transition: all 0.3s ease-in-out;
 
   /* Cores principais */
-  --cor-primaria: #d4af37; /* Dourado para destaques */
-  --cor-secundaria: #4b0c1e; /* Marrom escuro para bordas e detalhes */
-  --cor-fundo: #1a1a1d; /* Preto para fundo */
-  --cor-fundo-clara: #672a2a; /* Azul escuro para elementos de destaque */
-  --cor-texto: #f8f8f2; /* Branco para textos */
+  --cor-primaria: #d4af37;
+  /* Dourado para destaques */
+  --cor-secundaria: #4b0c1e;
+  /* Marrom escuro para bordas e detalhes */
+  --cor-fundo: #1a1a1d;
+  /* Preto para fundo */
+  --cor-fundo-clara: #672a2a;
+  /* Azul escuro para elementos de destaque */
+  --cor-texto: #f8f8f2;
+  /* Branco para textos */
 
   /* Variações com transparência */
   --cor-primaria-transparente: rgba(212, 175, 55, 0.3);
@@ -98,6 +103,7 @@ h2,
   font-weight: 700;
   text-shadow: var(--hover-glow);
 }
+
 #galeria-mid .row {
   padding-bottom: 3rem;
 }
@@ -212,10 +218,10 @@ h2,
 }
 
 /* Fix para mesma altura dos cards */
-.row-cols-1 > .col,
-.row-cols-sm-2 > .col,
-.row-cols-md-3 > .col,
-.row-cols-lg-4 > .col {
+.row-cols-1>.col,
+.row-cols-sm-2>.col,
+.row-cols-md-3>.col,
+.row-cols-lg-4>.col {
   display: flex;
   flex-direction: column;
 }
@@ -364,11 +370,9 @@ body {
 
 .premios__destaque {
   margin-bottom: 20px;
-  background: linear-gradient(
-    45deg,
-    var(--cor-secundaria),
-    var(--cor-fundo-clara)
-  );
+  background: linear-gradient(45deg,
+      var(--cor-secundaria),
+      var(--cor-fundo-clara));
   padding: 15px;
   border-radius: 4px;
   display: inline-block;
@@ -425,56 +429,23 @@ body {
 
 /* ==== FAQ e CADASTRO ==== */
 
-:root {
-  --dark: #1a1a1a;
-  --gold: #d4af37;
-  --red: #dc143c;
-  --light: #f5f5f5;
-}
-
-body {
-  font-family: Poppins, sans-serif;
-}
-
-.padrao-lp {
-  color: var(--dark);
-  border-radius: 8px;
-  max-width: 860px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-}
-
 /*Cadastro*/
 
 .cadastro {
-  background-color: var(--dark);
-}
-
-.cadastro__titulo {
-  font-weight: bold;
-  color: var(--gold);
+  background-color: var(--cor-fundo-pagina);
 }
 
 .cadastro__subtitulo {
-  color: var(--light);
-}
-
-.cadastro__linha,
-.faq__linha {
-  width: 150px;
-  height: 3px;
-  background-color: var(--red);
-  opacity: 1;
-  border: none;
+  color: var(--cor-texto-suave);
 }
 
 .cadastro__card {
-  background-color: var(--light);
+  background-color: var(--cor-texto-suave);
   border-radius: 15px;
 }
 
 .cadastro__label {
-  color: var(--dark);
+  color: var(--black);
   font-weight: bold;
   font-size: small;
 }
@@ -488,16 +459,15 @@ body {
 }
 
 .btn.cadastro__botao {
-  background-color: var(--red);
-  border-color: var(--red);
-  color: var(--light);
+  background-color: var(--wine);
+  border-color: var(--wine);
+  color: var(--cor-texto-suave);
   border-radius: 12px;
-  font-weight: bold;
 }
 
 .btn.cadastro__botao:hover {
-  background-color: #b91c3c;
-  color: var(--light);
+  background-color: var(--red);
+  color: var(--cor-texto-suave);
 }
 
 .form-control.cadastro__input,
@@ -510,16 +480,11 @@ body {
 /*FAQ*/
 
 .faq {
-  background-color: var(--light);
-}
-
-.faq__titulo {
-  font-weight: bold;
-  color: var(--dark);
+  background-color: var(--cor-texto-suave);
 }
 
 .faq__subtitulo {
-  color: #495057;
+  color: var(--cor-texto-suave);
 }
 
 .faq__icone {
@@ -527,8 +492,8 @@ body {
 }
 
 .faq__resposta {
-  background-color: white;
-  color: var(--dark);
+  background-color: var(--white);
+  color: var(--black);
   line-height: 1.6;
   border-top: 2px solid #e9ecef;
 }
@@ -538,23 +503,23 @@ body {
 }
 
 .btn.faq__cta {
-  background-color: var(--red);
-  border-color: var(--red);
-  color: var(--light);
+  background-color: var(--wine);
+  border-color: var(--wine);
+  color: var(--cor-texto-suave);
   border-radius: 12px;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .btn.faq__cta:hover {
-  background-color: #b91c3c;
+  background-color: var(--red);
   text-decoration: none;
-  color: var(--light);
+  color: var(--cor-texto-suave);
 }
 
 .accordion-button.faq__botao {
-  background-color: var(--light);
-  color: var(--dark);
+  background-color: var(--cor);
+  color: var(--black);
   border: none;
   border-radius: 10px;
   font-weight: bold;
@@ -564,6 +529,5 @@ body {
   border: 2px solid var(--gold);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background-color: white;
+  background-color: var(--white);
 }
