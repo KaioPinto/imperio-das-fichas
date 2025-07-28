@@ -95,7 +95,8 @@ main {
 
 #div-container-colum .card-body .btn-primary:active,
 #div-container-colum .card-body .btn-primary:active:focus,
-#div-container-colum .card-body .btn:hover {
+#div-container-colum .card-body .btn:hover,
+section.hero__text a:hover {
   background-color: var(--red);
 }
 
@@ -751,7 +752,7 @@ section.hero__text {
   width: 100%;
   max-width: 80rem;
   padding: 2rem 2rem;
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.20);
   backdrop-filter: blur(1.5px);
   border-radius: 2rem;
   height: 100%;
@@ -772,6 +773,7 @@ section.hero__text > div > div {
 section.hero__text h1 {
   z-index: 2;
   text-align: left;
+  font-size: 3rem;
 }
 
 section.hero__text h2 {
@@ -779,10 +781,12 @@ section.hero__text h2 {
   margin-top: 2.4px;
   margin-bottom: 1.6rem;
   color: var(--gold);
+  font-size: 4rem;
 }
 section.hero__text p {
   z-index: 2;
   color: var(--white);
+  font-size: 1.25rem;
 }
 section.hero__text span {
   z-index: 2;
