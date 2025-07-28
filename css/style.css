@@ -205,7 +205,7 @@ h2,
 .modal-header,
 .modal-footer {
   background-color: var(--cor-fundo-pagina) !important;
-  border: 2px solid var(--gold);
+  border: 2px solid var(--gold) !important;
   color: var(--cor-letras);
 }
 
@@ -665,8 +665,6 @@ body {
 .footer-bottom a:hover {
   color: #fff;
 }
-
-
 /* Responsividade */
 @media (max-width: 968px) {
   .banner {
