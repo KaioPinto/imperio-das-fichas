@@ -9,6 +9,16 @@ body {
     font-family: Poppins, sans-serif;
 }
 
+.padrao-lp {
+    color: var(--dark);
+    border-radius: 8px;
+    max-width: 860px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/*Cadastro*/
+
 .cadastro {
     background-color: var(--dark);
 }
@@ -70,6 +80,8 @@ body {
     padding: 6px 8px;
 }
 
+/*FAQ*/
+
 .faq {
     background-color: var(--light);
 }
@@ -127,12 +139,4 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     background-color: white;
-}
-
-.padrao-lp {
-    color: var(--dark);
-    border-radius: 8px;
-    max-width: 860px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
 }
