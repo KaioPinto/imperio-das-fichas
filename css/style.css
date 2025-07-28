@@ -8,6 +8,17 @@
   --white: #ffffff;
   --hover-glow: 0 0 12px rgba(212, 175, 55, 0.6);
   --transition: all 0.3s ease-in-out;
+
+  /* Cores principais */
+  --cor-primaria: #d4af37; /* Dourado para destaques */
+  --cor-secundaria: #4b0c1e; /* Marrom escuro para bordas e detalhes */
+  --cor-fundo: #1a1a1d; /* Preto para fundo */
+  --cor-fundo-clara: #672a2a; /* Azul escuro para elementos de destaque */
+  --cor-texto: #f8f8f2; /* Branco para textos */
+
+  /* Variações com transparência */
+  --cor-primaria-transparente: rgba(212, 175, 55, 0.3);
+  --cor-texto-suave: var(--cor-letras);
 }
 
 body {
@@ -39,6 +50,8 @@ main {
   margin-left: auto;
   margin-right: auto;
   min-height: 25rem;
+  border: 2px solid #d4af37;
+  border-radius: 4px;
 }
 
 #div-container-colum .card-img-top {
@@ -51,6 +64,7 @@ main {
   flex-direction: column;
   flex-grow: 1;
   padding: 1rem;
+  background-color: #1a1a1d;
 }
 
 #div-container-colum .card-body h5 {
@@ -59,13 +73,15 @@ main {
 }
 
 #div-container-colum .card-body p {
-  color: var(--black);
+  color: var(--cor-letras);
   flex-grow: 1;
 }
 
 #div-container-colum .card-body .btn {
   background-color: var(--wine);
   margin-top: auto;
+  border: none;
+  color: var(--cor-texto-suave);
 }
 
 #div-container-colum .card-body .btn-primary:active,
@@ -230,33 +246,6 @@ h2,
   margin-top: auto;
 }
 
-@media (max-width: 768px) {
-  #galeria-mid .card-img-top {
-    height: 160px;
-  }
-
-  #galeria-mid .card-body h5 {
-    font-size: 1.1rem;
-  }
-
-  #galeria-mid img {
-    height: 160px;
-  }
-}
-
-:root {
-  /* Cores principais */
-  --cor-primaria: #d4af37; /* Dourado para destaques */
-  --cor-secundaria: #71361c; /* Marrom escuro para bordas e detalhes */
-  --cor-fundo: #1a1a1d; /* Preto para fundo */
-  --cor-fundo-clara: #672a2a; /* Azul escuro para elementos de destaque */
-  --cor-texto: #ffffff; /* Branco para textos */
-
-  /* Variações com transparência */
-  --cor-primaria-transparente: rgba(212, 175, 55, 0.3);
-  --cor-texto-suave: rgba(255, 255, 255, 0.7);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -304,7 +293,7 @@ body {
   color: var(--cor-primaria);
   margin-bottom: 20px;
   text-transform: uppercase;
-  text-shadow: 0 0 10px var(--cor-primaria-transparente);
+  text-shadow: var(--hover-glow);
 }
 
 .banner__texto {
@@ -419,5 +408,17 @@ body {
 
   .premios__cartao {
     width: 100%;
+  }
+
+  #galeria-mid .card-img-top {
+    height: 160px;
+  }
+
+  #galeria-mid .card-body h5 {
+    font-size: 1.1rem;
+  }
+
+  #galeria-mid img {
+    height: 160px;
   }
 }
