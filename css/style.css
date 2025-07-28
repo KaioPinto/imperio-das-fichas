@@ -422,3 +422,148 @@ body {
     height: 160px;
   }
 }
+
+/* ==== FAQ e CADASTRO ==== */
+
+:root {
+  --dark: #1a1a1a;
+  --gold: #d4af37;
+  --red: #dc143c;
+  --light: #f5f5f5;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.padrao-lp {
+  color: var(--dark);
+  border-radius: 8px;
+  max-width: 860px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/*Cadastro*/
+
+.cadastro {
+  background-color: var(--dark);
+}
+
+.cadastro__titulo {
+  font-weight: bold;
+  color: var(--gold);
+}
+
+.cadastro__subtitulo {
+  color: var(--light);
+}
+
+.cadastro__linha,
+.faq__linha {
+  width: 150px;
+  height: 3px;
+  background-color: var(--red);
+  opacity: 1;
+  border: none;
+}
+
+.cadastro__card {
+  background-color: var(--light);
+  border-radius: 15px;
+}
+
+.cadastro__label {
+  color: var(--dark);
+  font-weight: bold;
+  font-size: small;
+}
+
+.cadastro__icone {
+  color: var(--gold);
+}
+
+.cadastro__aviso {
+  color: #666;
+}
+
+.btn.cadastro__botao {
+  background-color: var(--red);
+  border-color: var(--red);
+  color: var(--light);
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.btn.cadastro__botao:hover {
+  background-color: #b91c3c;
+  color: var(--light);
+}
+
+.form-control.cadastro__input,
+.form-select.cadastro__input {
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+
+/*FAQ*/
+
+.faq {
+  background-color: var(--light);
+}
+
+.faq__titulo {
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.faq__subtitulo {
+  color: #495057;
+}
+
+.faq__icone {
+  color: var(--red);
+}
+
+.faq__resposta {
+  background-color: white;
+  color: var(--dark);
+  line-height: 1.6;
+  border-top: 2px solid #e9ecef;
+}
+
+.faq__destaque {
+  color: var(--gold);
+}
+
+.btn.faq__cta {
+  background-color: var(--red);
+  border-color: var(--red);
+  color: var(--light);
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.faq__cta:hover {
+  background-color: #b91c3c;
+  text-decoration: none;
+  color: var(--light);
+}
+
+.accordion-button.faq__botao {
+  background-color: var(--light);
+  color: var(--dark);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.accordion .accordion-item.faq__item {
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
