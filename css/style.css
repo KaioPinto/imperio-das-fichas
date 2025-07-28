@@ -1,0 +1,424 @@
+:root {
+  --cor-fundo-pagina: #1a1a1d;
+  --cor-letras: #f8f8f2;
+  --gold: #d4af37;
+  --wine: #4b0c1e;
+  --red: #b1212f;
+  --black: #121212;
+  --white: #ffffff;
+  --hover-glow: 0 0 12px rgba(212, 175, 55, 0.6);
+  --transition: all 0.3s ease-in-out;
+
+  /* Cores principais */
+  --cor-primaria: #d4af37; /* Dourado para destaques */
+  --cor-secundaria: #4b0c1e; /* Marrom escuro para bordas e detalhes */
+  --cor-fundo: #1a1a1d; /* Preto para fundo */
+  --cor-fundo-clara: #672a2a; /* Azul escuro para elementos de destaque */
+  --cor-texto: #f8f8f2; /* Branco para textos */
+
+  /* Variações com transparência */
+  --cor-primaria-transparente: rgba(212, 175, 55, 0.3);
+  --cor-texto-suave: var(--cor-letras);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: radial-gradient(circle at top, #1a1a1d 30%, #000 100%);
+  color: var(--cor-letras);
+}
+
+h1,
+h2,
+h5 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+}
+
+main {
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Cards - Aplicando somente dentro de #div-container-colum*/
+#div-container-colum .card {
+  width: 100%;
+  max-width: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 25rem;
+  border: 2px solid #d4af37;
+  border-radius: 4px;
+}
+
+#div-container-colum .card-img-top {
+  height: 10rem;
+  object-fit: cover;
+}
+
+#div-container-colum .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: #1a1a1d;
+}
+
+#div-container-colum .card-body h5 {
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+#div-container-colum .card-body p {
+  color: var(--cor-letras);
+  flex-grow: 1;
+}
+
+#div-container-colum .card-body .btn {
+  background-color: var(--wine);
+  margin-top: auto;
+  border: none;
+  color: var(--cor-texto-suave);
+}
+
+#div-container-colum .card-body .btn-primary:active,
+#div-container-colum .card-body .btn-primary:active:focus,
+#div-container-colum .card-body .btn:hover {
+  background-color: var(--red);
+}
+
+#galeria-mid,
+#h2-titulo-section,
+h2,
+#galeria-mid .text-center {
+  color: var(--gold);
+  font-weight: 700;
+  text-shadow: var(--hover-glow);
+}
+#galeria-mid .row {
+  padding-bottom: 3rem;
+}
+
+#galeria-mid .card {
+  background-color: var(--black);
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#galeria-mid .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.5);
+}
+
+#galeria-mid .card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+#galeria-mid .card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#galeria-mid .card-body h5 {
+  color: var(--gold);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#galeria-mid .card-body p {
+  flex-grow: 1;
+  color: var(--cor-fundo-pagina);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+#galeria-mid .card-body .btn {
+  background-color: var(--wine);
+  color: var(--white);
+  border: none;
+  font-weight: bold;
+  transition: var(--transition);
+  margin-top: 1rem;
+}
+
+#galeria-mid .card-body .btn:hover {
+  background-color: var(--red);
+  box-shadow: var(--hover-glow);
+}
+
+#galeria-mid {
+  margin-top: 4rem;
+}
+
+#galeria-mid p {
+  font-size: 1.1rem;
+  font-weight: 400 !important;
+  color: var(--white);
+}
+
+#galeria-mid img {
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#galeria-mid img:hover {
+  transform: scale(1.05);
+  border-color: var(--gold);
+  box-shadow: var(--hover-glow);
+}
+
+.modal-content {
+  background-color: var(--black);
+  color: var(--white);
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+}
+
+.modal-title {
+  color: var(--gold);
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: var(--hover-glow);
+}
+
+.img-thumbnail {
+  border-radius: 10px;
+  border: 2px solid var(--gold);
+}
+
+.border-gold {
+  border: 2px solid #d4af37;
+}
+
+.text-gold {
+  color: #d4af37;
+}
+
+/* Fix para mesma altura dos cards */
+.row-cols-1 > .col,
+.row-cols-sm-2 > .col,
+.row-cols-md-3 > .col,
+.row-cols-lg-4 > .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  flex-grow: 1;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body p {
+  color: var(--cor-fundo-pagina);
+}
+
+.card-title {
+  color: var(--gold);
+}
+
+.card-text {
+  color: var(--white);
+}
+
+.card-body .btn {
+  margin-top: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+.cassino {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Seção Banner */
+.banner {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.banner__conteudo {
+  flex: 1;
+}
+
+.banner__imagem {
+  flex: 1;
+  max-width: 500px;
+}
+
+.banner__img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.banner__titulo {
+  font-size: 2.5rem;
+  color: var(--cor-primaria);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: var(--hover-glow);
+}
+
+.banner__texto {
+  max-width: 800px;
+  margin-bottom: 40px;
+  color: var(--cor-texto-suave);
+}
+
+/* Grid de Jogos */
+.jogos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.jogos-grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--cor-primaria);
+  text-align: center;
+  min-height: 20px;
+}
+
+.jogos-grid__texto {
+  color: var(--cor-primaria);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Seção Prêmios */
+.premios {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.premios__cartao {
+  flex: 1;
+  min-width: 300px;
+  background-color: var(--cor-fundo);
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+  border: 2px solid var(--cor-primaria);
+}
+
+.premios__titulo {
+  color: var(--cor-primaria);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-family: "Times New Roman", serif;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px var(--cor-fundo);
+}
+
+.premios__texto {
+  color: var(--cor-texto-suave);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.premios__destaque {
+  margin-bottom: 20px;
+  background: linear-gradient(
+    45deg,
+    var(--cor-secundaria),
+    var(--cor-fundo-clara)
+  );
+  padding: 15px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.premios__valor {
+  font-size: 2.5rem;
+  color: var(--cor-primaria);
+  text-shadow: 2px 2px 4px var(--cor-fundo);
+  font-family: "Times New Roman", serif;
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner__imagem {
+    order: -1;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__titulo {
+    font-size: 2rem;
+  }
+
+  .jogos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .premios {
+    justify-content: center;
+  }
+
+  .premios__cartao {
+    width: 100%;
+  }
+
+  #galeria-mid .card-img-top {
+    height: 160px;
+  }
+
+  #galeria-mid .card-body h5 {
+    font-size: 1.1rem;
+  }
+
+  #galeria-mid img {
+    height: 160px;
+  }
+}
