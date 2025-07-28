@@ -728,7 +728,7 @@ body {
 .hero .navbar-nav .nav-link {
    color: white;
    transition: transform 0.3s ease;
-   font-size: 1.6rem;
+   font-size: 1.5rem;
 }
 
 .hero .navbar-nav .nav-link:hover {
@@ -817,7 +817,7 @@ section.hero__text a {
    border-radius: 5px;
    transition: background-color 0.3s ease, transform 0.3s ease;
    color: var(--white);
-   font-size: 1.6rem;
+   font-size: 1.5rem;
 }
 
 section.hero__text a:hover {
