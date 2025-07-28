@@ -203,7 +203,7 @@ h2,
 
 .modal-body,
 .modal-header,
-.modal-foter {
+.modal-footer {
   background-color: var(--cor-fundo-pagina) !important;
   border: 2px solid var(--gold);
   color: var(--cor-letras);
