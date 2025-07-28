@@ -209,7 +209,7 @@ h2,
   color: var(--cor-letras);
 }
 
-.modal-body>h4 {
+.modal-body > h4 {
   padding-top: 10px;
 }
 
@@ -228,10 +228,10 @@ h2,
 }
 
 /* Fix para mesma altura dos cards */
-.row-cols-1>.col,
-.row-cols-sm-2>.col,
-.row-cols-md-3>.col,
-.row-cols-lg-4>.col {
+.row-cols-1 > .col,
+.row-cols-sm-2 > .col,
+.row-cols-md-3 > .col,
+.row-cols-lg-4 > .col {
   display: flex;
   flex-direction: column;
 }
@@ -380,9 +380,11 @@ body {
 
 .premios__destaque {
   margin-bottom: 20px;
-  background: linear-gradient(45deg,
-      var(--cor-secundaria),
-      var(--cor-fundo-clara));
+  background: linear-gradient(
+    45deg,
+    var(--cor-secundaria),
+    var(--cor-fundo-clara)
+  );
   padding: 15px;
   border-radius: 4px;
   display: inline-block;
@@ -395,12 +397,10 @@ body {
   font-family: "Times New Roman", serif;
 }
 
-
-
 /* Requisitos */
 
 .requisitos-section {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   color: #fff;
   padding: 60px 20px;
   text-align: center;
@@ -414,7 +414,7 @@ body {
 .requisitos-section .titulo {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #D4AF37;
+  color: #d4af37;
   /* Ouro */
 }
 
@@ -434,7 +434,7 @@ body {
 
 .requisito-card:hover {
   transform: scale(1.03);
-  border-color: #D4AF37;
+  border-color: #d4af37;
 }
 
 .requisito-card img {
@@ -445,19 +445,13 @@ body {
 .requisito-card h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #FFD700;
+  color: #ffd700;
 }
 
 .requisito-card p {
   font-size: 0.95rem;
   color: #ccc;
 }
-
-
-
-
-
-
 
 /* ==== FAQ e CADASTRO ==== */
 
@@ -568,9 +562,7 @@ body {
   border-radius: 4px;
 }
 
-
 /* Footer */
-
 
 .footer-cassino {
   background-color: #111;
@@ -665,6 +657,162 @@ body {
 .footer-bottom a:hover {
   color: #fff;
 }
+
+/* HERO */
+
+:root {
+  --gold: #d4af37;
+  --wine: #4b0c1e;
+  --red: #b1212f;
+  --felt-green: #146b3a;
+  --black: #1a1a1a;
+  --neon-purple: #7a1aff;
+  --neon-blue: #1ac1ff;
+  --white: #f5f5f5;
+}
+
+.hero {
+  position: relative;
+  background-image: url(../assets/black-jack.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.37);
+
+  z-index: 1;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+.hero .navbar {
+  position: relative;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(1.5px);
+}
+.hero .navbar-toggler {
+  background-color: var(--gold);
+}
+
+.hero .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.hero .navbar-nav {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.hero .navbar-nav .nav-link {
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.hero .navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+  color: var(--gold);
+}
+
+.hero nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+section.hero__text {
+  justify-self: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  margin: 4rem auto 4rem auto;
+  width: 100%;
+  max-width: 80rem;
+  padding: 2rem 2rem;
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(1.5px);
+  border-radius: 2rem;
+  height: 100%;
+  text-align: center;
+}
+
+section.hero__text > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section.hero__text > div > div {
+  text-align: center;
+}
+
+section.hero__text h1 {
+  z-index: 2;
+  text-align: left;
+}
+
+section.hero__text h2 {
+  z-index: 2;
+  margin-top: 2.4px;
+  margin-bottom: 1.6rem;
+  color: var(--gold);
+}
+section.hero__text p {
+  z-index: 2;
+  color: var(--white);
+}
+section.hero__text span {
+  z-index: 2;
+  font-weight: bold;
+  margin-top: 1.6px;
+  margin-bottom: 2rem;
+  color: var(--gold);
+}
+
+section.hero__text div {
+  text-align: left;
+}
+
+section.hero__text a {
+  z-index: 2;
+  text-align: center;
+  display: inline-flex;
+  align-self: start;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--wine);
+  color: var(--black);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: var(--white);
+}
+
 /* Responsividade */
 @media (max-width: 968px) {
   .banner {
