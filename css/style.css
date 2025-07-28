@@ -24,7 +24,6 @@ body {
     line-height: 1.6;
     background-color: var(--cor-fundo-pagina);
     color: var(--cor-letras);
-
 }
 
 main {
@@ -36,24 +35,21 @@ main {
     height: 100vh;
     background-color: var(--cor-fundo-pagina);
     overflow-y: scroll;
-
 }
 
 #div-container-colum {
     margin: 0;
     padding: 0;
     height: 100vh;
-
 }
 
 #h2-titulo-section {
     color: var(--gold);
-
 }
 
-/*Cards*/
+/*Cards - Aplicando somente dentro de #div-container-colum*/
 
-.card {
+#div-container-colum .card {
     width: 100%;
     max-width: 18rem;
     margin-left: auto;
@@ -61,36 +57,35 @@ main {
     min-height: 25rem;
 }
 
-.card-img-top {
+#div-container-colum .card-img-top {
     height: 10rem;
     object-fit: cover;
 }
 
-.card-body {
+#div-container-colum .card-body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     padding: 1rem;
 }
 
-.card-body h5 {
+#div-container-colum .card-body h5 {
     color: var(--gold);
     margin-bottom: 0.5rem;
-
 }
 
-.card-body p {
+#div-container-colum .card-body p {
     color: var(--black);
     flex-grow: 1;
 }
 
-.card-body .btn {
+#div-container-colum .card-body .btn {
     background-color: var(--wine);
     margin-top: auto;
 }
 
-.card-body .btn-primary:active,
-.card-body .btn-primary:active:focus,
-.card-body .btn:hover {
+#div-container-colum .card-body .btn-primary:active,
+#div-container-colum .card-body .btn-primary:active:focus,
+#div-container-colum .card-body .btn:hover {
     background-color: var(--red);
 }
