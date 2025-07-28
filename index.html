@@ -1,654 +1,871 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500;700&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
-  <link rel="shortcut icon" href="./assets/favicon-32x32.webp" type="image/x-icon" />
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+      rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/favicon-32x32.webp"
+      type="image/x-icon" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet">
 
+    <title>Império das fichas</title>
+  </head>
 
-  <title>Império das fichas</title>
-</head>
+  <body>
+    <main class="container text-center">
+      <div class="cassino">
+        <section class="banner">
+          <div class="banner__conteudo">
+            <h1 class="banner__titulo">Império das Fichas</h1>
+            <p class="banner__texto">
+              Bem-vindo ao melhor cassino online! Aqui você encontra os jogos
+              mais populares com gráficos incríveis e prêmios emocionantes.
+              Jogue seus favoritos como Caça-Níquel, Blackjack, Poker e muito
+              mais, tudo em um só lugar.
+            </p>
 
-<body>
-  <main class="container text-center">
-    <div class="cassino">
-      <section class="banner">
-        <div class="banner__conteudo">
-          <h1 class="banner__titulo">Império das Fichas</h1>
-          <p class="banner__texto">
-            Bem-vindo ao melhor cassino online! Aqui você encontra os jogos
-            mais populares com gráficos incríveis e prêmios emocionantes.
-            Jogue seus favoritos como Caça-Níquel, Blackjack, Poker e muito
-            mais, tudo em um só lugar.
-          </p>
-
-          <div class="jogos-grid">
-            <div class="jogos-grid__item">
-              <span class="jogos-grid__texto">Ambiente 100% Seguro</span>
-            </div>
-            <div class="jogos-grid__item">
-              <span class="jogos-grid__texto">Suporte 24/7</span>
-            </div>
-            <div class="jogos-grid__item">
-              <span class="jogos-grid__texto">Pagamento Instantâneo</span>
-            </div>
-            <div class="jogos-grid__item">
-              <span class="jogos-grid__texto">Jogo Justo Garantido</span>
+            <div class="jogos-grid">
+              <div class="jogos-grid__item">
+                <span class="jogos-grid__texto">Ambiente 100% Seguro</span>
+              </div>
+              <div class="jogos-grid__item">
+                <span class="jogos-grid__texto">Suporte 24/7</span>
+              </div>
+              <div class="jogos-grid__item">
+                <span class="jogos-grid__texto">Pagamento Instantâneo</span>
+              </div>
+              <div class="jogos-grid__item">
+                <span class="jogos-grid__texto">Jogo Justo Garantido</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="banner__imagem">
-          <img src="./assets/sobre_o_jogo.webp" alt="Mulher jogando 21 em um cassino" class="banner__img" />
-        </div>
-      </section>
-
-      <section class="premios">
-        <div class="premios__cartao">
-          <div class="premios__destaque">
-            <span class="premios__valor">R$50</span>
+          <div class="banner__imagem">
+            <img src="./assets/sobre_o_jogo.webp"
+              alt="Mulher jogando 21 em um cassino" class="banner__img" />
           </div>
-          <h2 class="premios__titulo">Bônus de Boas-vindas</h2>
-          <p class="premios__texto">
-            Ganhe R$50 em fichas grátis no seu primeiro acesso para começar a
-            jogar.
-          </p>
-        </div>
+        </section>
 
-        <div class="premios__cartao">
-          <div class="premios__destaque">
-            <span class="premios__valor">05+</span>
+        <section class="premios">
+          <div class="premios__cartao">
+            <div class="premios__destaque">
+              <span class="premios__valor">R$50</span>
+            </div>
+            <h2 class="premios__titulo">Bônus de Boas-vindas</h2>
+            <p class="premios__texto">
+              Ganhe R$50 em fichas grátis no seu primeiro acesso para começar a
+              jogar.
+            </p>
           </div>
-          <h2 class="premios__titulo">Variedade de Jogos</h2>
-          <p class="premios__texto">
-            Mais de 5 jogos clássicos de cassino disponíveis para você se
-            divertir a qualquer momento.
-          </p>
-        </div>
 
-        <div class="premios__cartao">
-          <div class="premios__destaque">
-            <span class="premios__valor">24h</span>
+          <div class="premios__cartao">
+            <div class="premios__destaque">
+              <span class="premios__valor">05+</span>
+            </div>
+            <h2 class="premios__titulo">Variedade de Jogos</h2>
+            <p class="premios__texto">
+              Mais de 5 jogos clássicos de cassino disponíveis para você se
+              divertir a qualquer momento.
+            </p>
           </div>
-          <h2 class="premios__titulo">Sempre Online</h2>
-          <p class="premios__texto">
-            Nossos jogos estão disponíveis 24 horas por dia, 7 dias por semana
-            para sua diversão.
-          </p>
-        </div>
-      </section>
-    </div>
-    <div class="row" id="div-container-colum">
-      <div class="col-12">
-        <h2 class="mb-4 mt-4" id="h2-titulo-section">
-          Nossas Opções de Entretenimento
-        </h2>
+
+          <div class="premios__cartao">
+            <div class="premios__destaque">
+              <span class="premios__valor">24h</span>
+            </div>
+            <h2 class="premios__titulo">Sempre Online</h2>
+            <p class="premios__texto">
+              Nossos jogos estão disponíveis 24 horas por dia, 7 dias por semana
+              para sua diversão.
+            </p>
+          </div>
+        </section>
       </div>
-      <section class="col-12">
-        <div class="row gy-4 justify-content-center row-cols-1 row-cols-sm-2
+      <div class="row" id="div-container-colum">
+        <div class="col-12">
+          <h2 class="mb-4 mt-4" id="h2-titulo-section">
+            Nossas Opções de Entretenimento
+          </h2>
+        </div>
+        <section class="col-12">
+          <div class="row gy-4 justify-content-center row-cols-1 row-cols-sm-2
           row-cols-md-3 row-cols-lg-4 id=" secao-card-jogos">
 
-          <div class="col">
-            <div class="card">
-              <img src="./assets/roleta.webp" class="card-img-top" alt="Roleta Clássica" />
-              <div class="card-body">
-                <h5 class="card-title">Roleta Clássica</h5>
-                <p class="card-text">
-                  Gire a roleta, faça sua aposta e sinta a emoção de ganhar um
-                  prêmio digno de sua sorte!
-                </p>
-                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard1">Confira</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card">
-              <img src="./assets/black-jack.webp" class="card-img-top" alt="Black Jack" />
-              <div class="card-body">
-                <h5 class="card-title">Black Jack</h5>
-                <p class="card-text">
-                  Desafie o dealer, teste sua estratégia e alcance o 21 para uma
-                  grande vitória!
-                </p>
-                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard2">Confira</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card">
-              <img src="./assets/roleta-cor.webp" class="card-img-top" alt="Roleta das Cores" />
-              <div class="card-body">
-                <h5 class="card-title">Roletas das Cores</h5>
-                <p class="card-text">
-                  Escolha sua cor da sorte, gire a roleta e veja a emoção da
-                  vitória colorir sua aposta!
-                </p>
-                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard3">Confira</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card">
-              <img src="./assets/niquelzz.webp" class="card-img-top" alt="Caça-Níquel" />
-              <div class="card-body">
-                <h5 class="card-title">Caça-Níquel</h5>
-                <p class="card-text">
-                  Puxe a alavanca, torça pelos símbolos e descubra a emoção de
-                  acertar um grande jackpot
-                </p>
-                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard4">Confira</a>
-              </div>
-            </div>
-          </div>
-      </section>
-    </div>
-
-    <!-- GALERIA DE IMAGENS -->
-    <section class="container py-5 pb-1" id="galeria-mid">
-      <h2 class="text-center text-gold mb-4">Galeria do Império</h2>
-      <p class="text-center text-light mb-5">
-        Confira momentos luxuosos do nosso cassino
-      </p>
-
-      <div class="row g-3">
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="./assets/galeria/roleta-luxo.webp" data-lightbox="galeria" data-title="Roleta de Luxo">
-            <img src="./assets/galeria/roleta-luxo.webp" class="img-fluid rounded shadow" alt="Roleta de Luxo" />
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="./assets/galeria/fichas-reais.webp" data-lightbox="galeria" data-title="Fichas Reais">
-            <img src="./assets/galeria/fichas-reais.webp" class="img-fluid rounded shadow" alt="Fichas Reais" />
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="./assets/galeria/cartas-mesa.webp" data-lightbox="galeria" data-title="Cartas na Mesa">
-            <img src="./assets/galeria/cartas-mesa.webp" class="img-fluid rounded shadow" alt="Cartas na Mesa" />
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="./assets/galeria/caca-niquel-1.webp" data-lightbox="galeria" data-title="Caça-níquel de Luxo">
-            <img src="./assets/galeria/caca-niquel-1.webp" class="img-fluid rounded shadow" alt="Caça-níquel" />
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="./assets/galeria/roleta-close.webp" data-lightbox="galeria" data-title="Roleta em Detalhe">
-            <img src="./assets/galeria/roleta-close.webp" class="img-fluid rounded shadow" alt="Roleta em Detalhe" />
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="./assets/galeria/fichas-1000.webp" data-lightbox="galeria" data-title="Fichas de 1000">
-            <img src="./assets/galeria/fichas-1000.webp" class="img-fluid rounded shadow" alt="Fichas de 1000" />
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="./assets/galeria/cartas-abertas.webp" data-lightbox="galeria" data-title="Cartas Abertas">
-            <img src="./assets/galeria/cartas-abertas.webp" class="img-fluid rounded shadow" alt="Cartas Abertas" />
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="./assets/galeria/caca-niquel-2.webp" data-lightbox="galeria" data-title="Caça-níquel Moderno">
-            <img src="./assets/galeria/caca-niquel-2.webp" class="img-fluid rounded shadow" alt="Caça-níquel Moderno" />
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="./assets/galeria/caca-niquel-2.webp" data-lightbox="galeria" data-title="Jogador na Roleta">
-            <img src="./assets/galeria/jogador-roleta.webp" class="img-fluid rounded shadow" alt="Jogador na Roleta" />
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="./assets/galeria/grupo-jogando.webp" data-lightbox="galeria" data-title="Grupo jogando Caça-Níquel">
-            <img src="./assets/galeria/grupo-jogando.webp" class="img-fluid rounded shadow"
-              alt="Grupo jogando Caça-Níquel" />
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="./assets/galeria/dados-na-mesa.webp" data-lightbox="galeria" data-title="Dados na Mesa">
-            <img src="./assets/galeria/dados-na-mesa.webp" class="img-fluid rounded shadow" alt="Dados na Mesa" />
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="./assets/galeria/jogadora-vencendo.webp" data-lightbox="galeria" data-title="Jogadora vencendo">
-            <img src="./assets/galeria/jogadora-vencendo.webp" class="img-fluid rounded shadow"
-              alt="Jogadora vencendo" />
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Apenas o conteúdo dos moldais -->
-
-  <!-- Primeiro molda: Roleta clássica -->
-  <div class="modal fade" id="modalCard1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="modalCard1Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="modalCard1Label">
-            Detalhes da Roleta Clássica
-          </h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img class="img-thumbnail " id="modal__img" src="./assets/coleta-classica.webp" alt="roleta" />
-          <h4>Como funciona</h4>
-          <p>
-            A Roleta Clássica é um dos jogos de azar mais tradicionais e
-            elegantes dos cassinos. Neste modo simplificado, o jogador aposta
-            se o número sorteado será <strong>par</strong> ou
-            <strong>ímpar</strong>.
-          </p>
-          <p>
-            Para jogar, basta escolher uma das opções — par ou ímpar — e
-            definir o valor que deseja apostar. Em seguida, a roleta é girada
-            e uma bola é lançada sobre ela, caindo aleatoriamente em um dos
-            números do disco.
-          </p>
-          <p>
-            Se o número sorteado corresponder ao tipo que você escolheu (por
-            exemplo, você apostou em “ímpar” e caiu 17), você vence a rodada e
-            recebe <strong>2x o valor apostado</strong> de volta.
-          </p>
-          <p>
-            É um jogo rápido, simples e cheio de adrenalina. Basta confiar na
-            sua intuição, fazer sua aposta e torcer para a roleta girar a seu
-            favor!
-          </p>
-        </div>
-        <div class="modal-footer ">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Fechar
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Segundo molda: Black Jack -->
-  <div class="modal fade" id="modalCard2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="modalCard2Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="modalCard2Label">
-            Detalhes do Black Jack
-          </h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img class="img-thumbnail " id="modal__img" src="./assets/black-jack.webp" alt="roleta" />
-          <h4>Como funciona</h4>
-          <p>
-            O Blackjack, também conhecido como 21, é um dos jogos de cartas
-            mais clássicos e populares dos cassinos. O objetivo é simples:
-            somar cartas que cheguem o mais próximo possível de 21, sem
-            ultrapassar esse valor.
-          </p>
-          <p>
-            Cada jogador recebe duas cartas, assim como o dealer (a "banca").
-            As cartas numéricas valem seu número correspondente, as figuras
-            (Valete, Dama e Rei) valem 10 pontos, e o Ás pode valer 1 ou 11,
-            dependendo do que for mais vantajoso para a sua mão.
-          </p>
-          <p>
-            Durante a rodada, você pode escolher entre pedir mais cartas
-            ("Hit") ou parar ("Stand"). O objetivo é tentar vencer o dealer
-            fazendo uma pontuação maior que a dele — sem passar de 21. Se você
-            ultrapassar esse valor, perde automaticamente ("estoura").
-          </p>
-          <p>
-            Se a sua pontuação for maior que a do dealer, ou se ele estourar e
-            você não, você ganha a rodada e recebe
-            <strong>2x o valor apostado</strong>. É um jogo de estratégia e
-            emoção, onde cada decisão pode ser a chave para a vitória!
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Fechar
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Terciero modal: Roleta das Cores -->
-  <div class="modal fade" id="modalCard3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="modalCard3Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="modalCard3Label">
-            Detalhes da Roleta das Cores
-          </h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img class="img-thumbnail " id="modal__img" src="./assets/roleta-cor.webp" alt="roleta" />
-          <h4>Como funciona</h4>
-          <p>
-            A Roleta das Cores é um jogo simples, rápido e baseado totalmente
-            na sorte. Para jogar, você escolhe uma das quatro cores
-            disponíveis: <strong>vermelho</strong>, <strong>azul</strong>,
-            <strong>amarelo</strong> ou <strong>verde</strong>. Depois disso,
-            você define o valor da sua aposta e gira a roleta.
-          </p>
-          <p>
-            Quando a roleta parar, a cor sorteada será revelada. Se for
-            exatamente a cor que você escolheu, você vence a rodada e recebe
-            <strong>2x o valor apostado</strong> direto no seu saldo. Por
-            exemplo, se apostar R$20 na cor azul e ela for sorteada, você
-            ganha R$40!
-          </p>
-          <p>
-            É uma maneira divertida de testar sua sorte com mecânica simples e
-            visual chamativo. Escolha sua cor preferida, gire a roleta e torça
-            para ela parar na sua aposta. Boa sorte!
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Fechar
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Quarto molda: Caça -->
-  <div class="modal fade" id="modalCard4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="modalCard4Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="modalCard4Label">
-            Detalhes do Caça-Níquel
-          </h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img class="img-thumbnail " id="modal__img" src="./assets/niquel.webp" alt="roleta" />
-          <h4>Como funciona</h4>
-          <p>
-            O caça-níquel é uma máquina de sorte que oferece uma experiência
-            emocionante e simples de jogar. Neste jogo, você pode apostar um
-            valor do seu saldo e tentar a sorte girando os rolos da máquina.
-            Existem três combinações principais que podem garantir sua
-            vitória: <strong>cereja</strong>, <strong>estrela</strong> e
-            <strong>diamante</strong>. Cada uma dessas combinações representa
-            uma chance de ganhar o dobro do valor apostado.
-          </p>
-          <p>
-            Ao iniciar a rodada, os símbolos giram e param aleatoriamente. Se
-            o resultado for a combinação exata do símbolo em que você apostou,
-            você recebe <strong>2x o valor apostado</strong> direto no seu
-            saldo. Por exemplo, se apostar R$10 e a combinação sorteada for a
-            que você escolheu, você receberá R$20!
-          </p>
-          <p>
-            É um jogo de pura sorte, rápido, dinâmico e perfeito para quem
-            busca diversão e a possibilidade de multiplicar os ganhos em
-            poucos segundos. Faça sua aposta, escolha seu símbolo da sorte e
-            boa sorte no giro!
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Fechar
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalImagemAmpliada" tabindex="-1" aria-labelledby="imagemAmpliadaLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content bg-dark border border-gold">
-        <div class="modal-header border-0">
-          <h5 class="modal-title text-gold" id="imagemAmpliadaLabel"></h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body text-center">
-          <img id="imagemExibida" src="" alt="Imagem ampliada" class="img-fluid rounded-3 border border-gold" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FAQ -->
-
-  <section class="pb-5">
-    <div class="container-fluid">
-      <div class="row justify-content-center" id="cadastro">
-        <div class="col-10 col-sm-9 col-md-8 col-lg-6 col-xl-5">
-
-          <div class="text-center mb-3">
-            <h2 class="mb-4 mt-4" id="h2-titulo-section">
-              Cadastre-se e Ganhe 100 Fichas Grátis!
-            </h2>
-            <p class="text-center text-light mb-5">
-              Comece o jogo com vantagem e domine as partidas desde o primeiro dia
-            </p>
-          </div>
-
-          <div class="card-body p-4 p-md-5 p-lg-5 cadastro__card">
-            <form>
-              <div class="mb-3">
-                <label for="nome" class="form-label cadastro__label">
-                  <i class="fas fa-user me-1 me-md-2 cadastro__icone"></i> Nome Completo
-                </label>
-                <input type="text" class="form-control form-control-sm cadastro__input" id="nome"
-                  placeholder="Seu nome completo" required>
-              </div>
-
-              <div class="mb-3">
-                <label for="email" class="form-label cadastro__label">
-                  <i class="fas fa-envelope me-1 me-md-2 cadastro__icone"></i> E-mail
-                </label>
-                <input type="email" class="form-control form-control-sm cadastro__input" id="email"
-                  placeholder="seu@email.com" required>
-              </div>
-
-              <div class="mb-3">
-                <label for="telefone" class="form-label cadastro__label">
-                  <i class="fas fa-phone me-1 me-md-2 cadastro__icone"></i> Telefone
-                </label>
-                <input type="tel" class="form-control form-control-sm cadastro__input" id="telefone"
-                  placeholder="(99) 99999-9999">
-              </div>
-
-              <div class="mb-3">
-                <label for="fonte" class="form-label cadastro__label">
-                  <i class="fas fa-search me-1 me-md-2 cadastro__icone"></i> Como você
-                  conheceu o Império das Fichas?
-                </label>
-                <select class="form-select form-select-sm cadastro__input" id="fonte" required>
-                  <option value="">Selecione uma opção</option>
-                  <option value="redes-sociais">Redes sociais (Instagram, Facebook, TikTok)
-                  </option>
-                  <option value="indicacao">Indicação de amigos</option>
-                  <option value="google">Busca no Google</option>
-                  <option value="youtube">YouTube</option>
-                  <option value="outros">Outros</option>
-                </select>
-              </div>
-
-              <div class="mb-3">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="novidades" checked>
-                  <label class="form-check-label cadastro__label" for="novidades">
-                    Quero receber novidades e promoções exclusivas por e-mail
-                  </label>
-                </div>
-              </div>
-
-              <div class="text-center">
-                <button type="submit" class="btn px-4 py-2 small fs-sm-6 fs-md-5 cadastro__botao">
-                  <i class="fas fa-gift me-1"></i>
-                  Cadastrar
-                </button>
-              </div>
-
-              <div class="text-center mt-3">
-                <small class="cadastro__aviso">
-                  <em>Suas fichas serão creditadas automaticamente após o cadastro no jogo</em>
-                </small>
-              </div>
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-5 divisao" id="faq">
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-10 col-sm-9 col-md-8 col-lg-6 col-xl-5">
-
-          <div class="text-center mb-3">
-            <h2 class="mb-4 mt-4" id="h2-titulo-section">
-              Perguntas Frequentes
-            </h2>
-            <p class="text-center text-light mb-5">
-              Tire suas dúvidas sobre o Império das Fichas
-            </p>
-          </div>
-
-          <div class="accordion" id="faqAccordion">
-            <div class="accordion-item mb-2 mb-md-3 faq__item">
-              <h2 class="accordion-header" id="heading1">
-                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false"
-                  aria-controls="faq1">
-                  <i class="fas fa-play-circle me-2 me-md-3 faq__icone"></i>
-                  Como posso começar a jogar no Império das Fichas?
-                </button>
-              </h2>
-              <div id="faq1" class="accordion-collapse collapse" aria-labelledby="heading1"
-                data-bs-parent="#faqAccordion">
-                <div class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
-                  Para começar a jogar, basta fazer seu cadastro gratuito e realizar o
-                  Download do Jogo. Após confirmar seu e-mail, você receberá
-                  <strong class="faq__destaque">100 fichas de boas-vindas</strong>
-                  automaticamente para começar a jogar imediatamente. O processo leva
-                  menos de 2 minutos!
+            <div class="col">
+              <div class="card">
+                <img src="./assets/roleta.webp" class="card-img-top"
+                  alt="Roleta Clássica" />
+                <div class="card-body">
+                  <h5 class="card-title">Roleta Clássica</h5>
+                  <p class="card-text">
+                    Gire a roleta, faça sua aposta e sinta a emoção de ganhar um
+                    prêmio digno de sua sorte!
+                  </p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#modalCard1">Confira</a>
                 </div>
               </div>
             </div>
 
-            <div class="accordion-item mb-2 mb-md-3 faq__item">
-              <h2 class="accordion-header" id="heading2">
-                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false"
-                  aria-controls="faq2">
-                  <i class="fas fa-coins me-2 me-md-3 faq__icone"></i>
-                  Como funcionam as fichas no jogo?
-                </button>
-              </h2>
-              <div id="faq2" class="accordion-collapse collapse" aria-labelledby="heading2"
-                data-bs-parent="#faqAccordion">
-                <div class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
-                  As fichas são a moeda do jogo que você usa para apostar.
-                  <strong class="faq__destaque">A cada vitória, você multiplica suas
-                    fichas</strong>
-                  baseado na aposta e no jogo escolhido.
+            <div class="col">
+              <div class="card">
+                <img src="./assets/black-jack.webp" class="card-img-top"
+                  alt="Black Jack" />
+                <div class="card-body">
+                  <h5 class="card-title">Black Jack</h5>
+                  <p class="card-text">
+                    Desafie o dealer, teste sua estratégia e alcance o 21 para
+                    uma
+                    grande vitória!
+                  </p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#modalCard2">Confira</a>
                 </div>
               </div>
             </div>
 
-            <div class="accordion-item mb-2 mb-md-3 faq__item">
-              <h2 class="accordion-header" id="heading3">
-                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
-                  aria-controls="faq3">
-                  <i class="fas fa-gamepad me-2 me-md-3 faq__icone"></i>
-                  Quais jogos estão disponíveis?
-                </button>
-              </h2>
-              <div id="faq3" class="accordion-collapse collapse" aria-labelledby="heading3"
-                data-bs-parent="#faqAccordion">
-                <div class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
-                  Oferecemos uma variedade completa: <strong class="faq__destaque">Roleta das
-                    Cores</strong>
-                  (aposte em vermelho, azul, amarelo ou verde), <strong class="faq__destaque">Roleta
-                    Clássica</strong>
-                  (aposte em par ou ímpar) e <strong class="faq__destaque">Caça-Níquel</strong>
-                  (gire
-                  os rolos e acerte
-                  a combinação). Cada jogo tem suas próprias regras e multiplicadores únicos!
+            <div class="col">
+              <div class="card">
+                <img src="./assets/roleta-cor.webp" class="card-img-top"
+                  alt="Roleta das Cores" />
+                <div class="card-body">
+                  <h5 class="card-title">Roletas das Cores</h5>
+                  <p class="card-text">
+                    Escolha sua cor da sorte, gire a roleta e veja a emoção da
+                    vitória colorir sua aposta!
+                  </p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#modalCard3">Confira</a>
                 </div>
               </div>
             </div>
 
-            <div class="accordion-item mb-2 mb-md-3 faq__item">
-              <h2 class="accordion-header" id="heading4">
-                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false"
-                  aria-controls="faq4">
-                  <i class="fas fa-trophy me-2 me-md-3 faq__icone"></i>
-                  Existe ranking dos melhores jogadores?
-                </button>
-              </h2>
-              <div id="faq4" class="accordion-collapse collapse" aria-labelledby="heading4"
-                data-bs-parent="#faqAccordion">
-                <div class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
-                  Sim! Os <strong class="faq__destaque">jogadores que mais vencem
-                    partidas</strong>
-                  aparecem no nosso ranking oficial. Quanto mais você ganha, mais sobe no ranking
-                  e maior é o seu prestígio na comunidade!
+            <div class="col">
+              <div class="card">
+                <img src="./assets/niquelzz.webp" class="card-img-top"
+                  alt="Caça-Níquel" />
+                <div class="card-body">
+                  <h5 class="card-title">Caça-Níquel</h5>
+                  <p class="card-text">
+                    Puxe a alavanca, torça pelos símbolos e descubra a emoção de
+                    acertar um grande jackpot
+                  </p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#modalCard4">Confira</a>
                 </div>
               </div>
             </div>
+          </section>
+        </div>
 
-            <div class="accordion-item mb-2 mb-md-3 faq__item">
-              <h2 class="accordion-header" id="heading5">
-                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false"
-                  aria-controls="faq5">
-                  <i class="fas fa-shield-alt me-2 me-md-3 faq__icone"></i>
-                  O jogo é seguro e confiável?
-                </button>
-              </h2>
-              <div id="faq5" class="accordion-collapse collapse" aria-labelledby="heading5"
-                data-bs-parent="#faqAccordion">
-                <div class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
-                  Sim. Utilizamos <strong class="faq__destaque">protocolos de segurança</strong>
-                  para
-                  proteger seus dados e transações. O jogo é destinado a maiores de 18 anos e deve
-                  ser jogado com responsabilidade.
-                </div>
-              </div>
-            </div>
+        <!-- GALERIA DE IMAGENS -->
+        <section class="container py-5 pb-1" id="galeria-mid">
+          <h2 class="text-center text-gold mb-4">Galeria do Império</h2>
+          <p class="text-center text-light mb-5">
+            Confira momentos luxuosos do nosso cassino
+          </p>
 
-            <div class="text-center mt-4 mt-md-5 px-4">
-              <a href="#cadastro" class="btn px-4 py-2 py-md-3 small fs-sm-1 fs-md-5 faq__cta">
-                <i class="fas fa-gift me-2"></i>
-                Cadastrar Agora
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="./assets/galeria/roleta-luxo.webp"
+                data-lightbox="galeria" data-title="Roleta de Luxo">
+                <img src="./assets/galeria/roleta-luxo.webp"
+                  class="img-fluid rounded shadow" alt="Roleta de Luxo" />
               </a>
             </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="./assets/galeria/fichas-reais.webp"
+                data-lightbox="galeria" data-title="Fichas Reais">
+                <img src="./assets/galeria/fichas-reais.webp"
+                  class="img-fluid rounded shadow" alt="Fichas Reais" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="./assets/galeria/cartas-mesa.webp"
+                data-lightbox="galeria" data-title="Cartas na Mesa">
+                <img src="./assets/galeria/cartas-mesa.webp"
+                  class="img-fluid rounded shadow" alt="Cartas na Mesa" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="./assets/galeria/caca-niquel-1.webp"
+                data-lightbox="galeria" data-title="Caça-níquel de Luxo">
+                <img src="./assets/galeria/caca-niquel-1.webp"
+                  class="img-fluid rounded shadow" alt="Caça-níquel" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="./assets/galeria/roleta-close.webp"
+                data-lightbox="galeria" data-title="Roleta em Detalhe">
+                <img src="./assets/galeria/roleta-close.webp"
+                  class="img-fluid rounded shadow" alt="Roleta em Detalhe" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="./assets/galeria/fichas-1000.webp"
+                data-lightbox="galeria" data-title="Fichas de 1000">
+                <img src="./assets/galeria/fichas-1000.webp"
+                  class="img-fluid rounded shadow" alt="Fichas de 1000" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="./assets/galeria/cartas-abertas.webp"
+                data-lightbox="galeria" data-title="Cartas Abertas">
+                <img src="./assets/galeria/cartas-abertas.webp"
+                  class="img-fluid rounded shadow" alt="Cartas Abertas" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="./assets/galeria/caca-niquel-2.webp"
+                data-lightbox="galeria" data-title="Caça-níquel Moderno">
+                <img src="./assets/galeria/caca-niquel-2.webp"
+                  class="img-fluid rounded shadow" alt="Caça-níquel Moderno" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="./assets/galeria/caca-niquel-2.webp"
+                data-lightbox="galeria" data-title="Jogador na Roleta">
+                <img src="./assets/galeria/jogador-roleta.webp"
+                  class="img-fluid rounded shadow" alt="Jogador na Roleta" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="./assets/galeria/grupo-jogando.webp"
+                data-lightbox="galeria" data-title="Grupo jogando Caça-Níquel">
+                <img src="./assets/galeria/grupo-jogando.webp"
+                  class="img-fluid rounded shadow"
+                  alt="Grupo jogando Caça-Níquel" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="./assets/galeria/dados-na-mesa.webp"
+                data-lightbox="galeria" data-title="Dados na Mesa">
+                <img src="./assets/galeria/dados-na-mesa.webp"
+                  class="img-fluid rounded shadow" alt="Dados na Mesa" />
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="./assets/galeria/jogadora-vencendo.webp"
+                data-lightbox="galeria" data-title="Jogadora vencendo">
+                <img src="./assets/galeria/jogadora-vencendo.webp"
+                  class="img-fluid rounded shadow"
+                  alt="Jogadora vencendo" />
+              </a>
+            </div>
+          </div>
+        </section>
 
+        <!-- Requisitos -->
+
+        <section class="requisitos-section mt-5 mb-5">
+          <div class="container">
+            <h2 class="titulo">Requisitos para Jogar</h2>
+            <div class="requisitos-grid">
+
+              <!-- Compatibilidade -->
+              <div class="requisito-card">
+                <img src="./assets/compatibilidade.webp" alt="Compatibilidade">
+                <h3>Compatibilidade</h3>
+                <p>Jogue no navegador (Chrome, Firefox, Edge) ou baixe para
+                  Android e iOS.</p>
+              </div>
+
+              <!-- Conexão -->
+              <div class="requisito-card">
+                <img src="./assets/conexao.webp" alt="Conexão">
+                <h3>Conexão</h3>
+                <p>É recomendada uma conexão de pelo menos 5 Mbps para uma
+                  experiência fluida.</p>
+              </div>
+
+              <!-- Idade Mínima -->
+              <div class="requisito-card">
+                <img src="./assets/restricao-de-idade.webp" alt="Idade mínima">
+                <h3>Idade Mínima</h3>
+                <p>Permitido apenas para maiores de 18 anos conforme
+                  regulamentações.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FAQ -->
+
+        <section class="pb-5">
+          <div class="container-fluid">
+            <div class="row justify-content-center" id="cadastro">
+              <div class="col-10 col-sm-9 col-md-8 col-lg-6 col-xl-5">
+
+                <div class="text-center mb-3">
+                  <h2 class="mb-4 mt-4" id="h2-titulo-section">
+                    Cadastre-se e Ganhe 100 Fichas Grátis!
+                  </h2>
+                  <p class="text-center text-light mb-5">
+                    Comece o jogo com vantagem e domine as partidas desde o
+                    primeiro dia
+                  </p>
+                </div>
+
+                <div
+                  class="card-body p-4 p-md-5 p-lg-5 cadastro__card text-start">
+                  <form>
+                    <div class="mb-3">
+                      <label for="nome" class="form-label cadastro__label">
+                        <i class="fas fa-user me-1 me-md-2 cadastro__icone"></i>
+                        Nome Completo
+                      </label>
+                      <input type="text"
+                        class="form-control form-control-sm cadastro__input"
+                        id="nome"
+                        placeholder="Seu nome completo" required>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="email" class="form-label cadastro__label">
+                        <i
+                          class="fas fa-envelope me-1 me-md-2 cadastro__icone"></i>
+                        E-mail
+                      </label>
+                      <input type="email"
+                        class="form-control form-control-sm cadastro__input"
+                        id="email"
+                        placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="telefone" class="form-label cadastro__label">
+                        <i
+                          class="fas fa-phone me-1 me-md-2 cadastro__icone"></i>
+                        Telefone
+                      </label>
+                      <input type="tel"
+                        class="form-control form-control-sm cadastro__input"
+                        id="telefone"
+                        placeholder="(99) 99999-9999">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="fonte" class="form-label cadastro__label">
+                        <i
+                          class="fas fa-search me-1 me-md-2 cadastro__icone"></i>
+                        Como você
+                        conheceu o Império das Fichas?
+                      </label>
+                      <select class="form-select form-select-sm cadastro__input"
+                        id="fonte" required>
+                        <option value>Selecione uma opção</option>
+                        <option value="redes-sociais">Redes sociais (Instagram,
+                          Facebook, TikTok)
+                        </option>
+                        <option value="indicacao">Indicação de amigos</option>
+                        <option value="google">Busca no Google</option>
+                        <option value="youtube">YouTube</option>
+                        <option value="outros">Outros</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          id="novidades" checked>
+                        <label class="form-check-label cadastro__label"
+                          for="novidades">
+                          Quero receber novidades e promoções exclusivas por
+                          e-mail
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit"
+                        class="btn px-4 py-2 small fs-sm-6 fs-md-5 cadastro__botao">
+                        <i class="fas fa-gift me-1"></i>
+                        Cadastrar
+                      </button>
+                    </div>
+
+                    <div class="text-center mt-3">
+                      <small class="cadastro__aviso">
+                        <em>Suas fichas serão creditadas automaticamente após o
+                          cadastro no jogo</em>
+                      </small>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-5 divisao" id="faq">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-10 col-sm-9 col-md-8 col-lg-6 col-xl-5">
+
+                <div class="text-center mb-3">
+                  <h2 class="mb-4 mt-4" id="h2-titulo-section">
+                    Perguntas Frequentes
+                  </h2>
+                  <p class="text-center text-light mb-5">
+                    Tire suas dúvidas sobre o Império das Fichas
+                  </p>
+                </div>
+
+                <div class="accordion" id="faqAccordion">
+                  <div class="accordion-item mb-2 mb-md-3 faq__item">
+                    <h2 class="accordion-header" id="heading1">
+                      <button
+                        class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq1" aria-expanded="false"
+                        aria-controls="faq1">
+                        <i
+                          class="fas fa-play-circle me-2 me-md-3 faq__icone"></i>
+                        Como posso começar a jogar no Império das Fichas?
+                      </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse"
+                      aria-labelledby="heading1"
+                      data-bs-parent="#faqAccordion">
+                      <div
+                        class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
+                        Para começar a jogar, basta fazer seu cadastro gratuito
+                        e realizar o
+                        Download do Jogo. Após confirmar seu e-mail, você
+                        receberá
+                        <strong class="faq__destaque">100 fichas de
+                          boas-vindas</strong>
+                        automaticamente para começar a jogar imediatamente. O
+                        processo leva
+                        menos de 2 minutos!
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item mb-2 mb-md-3 faq__item">
+                    <h2 class="accordion-header" id="heading2">
+                      <button
+                        class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq2" aria-expanded="false"
+                        aria-controls="faq2">
+                        <i class="fas fa-coins me-2 me-md-3 faq__icone"></i>
+                        Como funcionam as fichas no jogo?
+                      </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse"
+                      aria-labelledby="heading2"
+                      data-bs-parent="#faqAccordion">
+                      <div
+                        class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
+                        As fichas são a moeda do jogo que você usa para apostar.
+                        <strong class="faq__destaque">A cada vitória, você
+                          multiplica suas
+                          fichas</strong>
+                        baseado na aposta e no jogo escolhido.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item mb-2 mb-md-3 faq__item">
+                    <h2 class="accordion-header" id="heading3">
+                      <button
+                        class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq3" aria-expanded="false"
+                        aria-controls="faq3">
+                        <i class="fas fa-gamepad me-2 me-md-3 faq__icone"></i>
+                        Quais jogos estão disponíveis?
+                      </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse"
+                      aria-labelledby="heading3"
+                      data-bs-parent="#faqAccordion">
+                      <div
+                        class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
+                        Oferecemos uma variedade completa: <strong
+                          class="faq__destaque">Roleta das
+                          Cores</strong>
+                        (aposte em vermelho, azul, amarelo ou verde), <strong
+                          class="faq__destaque">Roleta
+                          Clássica</strong>
+                        (aposte em par ou ímpar) e <strong
+                          class="faq__destaque">Caça-Níquel</strong>
+                        (gire
+                        os rolos e acerte
+                        a combinação). Cada jogo tem suas próprias regras e
+                        multiplicadores únicos!
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item mb-2 mb-md-3 faq__item">
+                    <h2 class="accordion-header" id="heading4">
+                      <button
+                        class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq4" aria-expanded="false"
+                        aria-controls="faq4">
+                        <i class="fas fa-trophy me-2 me-md-3 faq__icone"></i>
+                        Existe ranking dos melhores jogadores?
+                      </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse"
+                      aria-labelledby="heading4"
+                      data-bs-parent="#faqAccordion">
+                      <div
+                        class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
+                        Sim! Os <strong class="faq__destaque">jogadores que mais
+                          vencem
+                          partidas</strong>
+                        aparecem no nosso ranking oficial. Quanto mais você
+                        ganha, mais sobe no ranking
+                        e maior é o seu prestígio na comunidade!
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item mb-2 mb-md-3 faq__item">
+                    <h2 class="accordion-header" id="heading5">
+                      <button
+                        class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq5" aria-expanded="false"
+                        aria-controls="faq5">
+                        <i
+                          class="fas fa-shield-alt me-2 me-md-3 faq__icone"></i>
+                        O jogo é seguro e confiável?
+                      </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse"
+                      aria-labelledby="heading5"
+                      data-bs-parent="#faqAccordion">
+                      <div
+                        class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
+                        Sim. Utilizamos <strong class="faq__destaque">protocolos
+                          de segurança</strong>
+                        para
+                        proteger seus dados e transações. O jogo é destinado a
+                        maiores de 18 anos e deve
+                        ser jogado com responsabilidade.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center mt-4 mt-md-5 px-4">
+                    <a href="#cadastro"
+                      class="btn px-4 py-2 py-md-3 small fs-sm-1 fs-md-5 faq__cta">
+                      <i class="fas fa-gift me-2"></i>
+                      Cadastrar Agora
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer-cassino">
+          <div class="footer-container">
+
+            <div class="footer-logo">
+              <img src="img/logo-fichas.svg" alt="Império das Fichas">
+              <p>O jogo de cassino online mais emocionante do reino. Desafie a
+                sorte e conquiste sua coroa!</p>
+            </div>
+
+            <!-- Nav -->
+            <div class="footer-links">
+              <h4>Navegação</h4>
+              <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#como-jogar">Como Jogar</a></li>
+                <li><a href="#recompensas">Recompensas</a></li>
+                <li><a href="#cadastro">Cadastre-se</a></li>
+              </ul>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="footer-social">
+              <h4>Siga-nos</h4>
+              <a href="#"><img src="img/icons/instagram.svg"
+                  alt="Instagram"></a>
+              <a href="#"><img src="img/icons/facebook.svg" alt="Facebook"></a>
+              <a href="#"><img src="img/icons/twitter.svg" alt="Twitter"></a>
+            </div>
+          </div>
+
+          <!-- Direitos -->
+          <div class="footer-bottom">
+            <p>&copy; 2025 Império das Fichas. Todos os direitos reservados.</p>
+            <p><a href="#privacidade">Política de Privacidade</a> | <a
+                href="#termos">Termos de Uso</a></p>
+          </div>
+        </footer>
+
+        <!-- Apenas o conteúdo dos moldais -->
+
+        <!-- Primeiro molda: Roleta clássica -->
+        <div class="modal fade" id="modalCard1" data-bs-backdrop="static"
+          data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="modalCard1Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalCard1Label">
+                  Detalhes da Roleta Clássica
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-thumbnail " id="modal__img"
+                  src="./assets/coleta-classica.webp" alt="roleta" />
+                <h4>Como funciona</h4>
+                <p>
+                  A Roleta Clássica é um dos jogos de azar mais tradicionais e
+                  elegantes dos cassinos. Neste modo simplificado, o jogador
+                  aposta
+                  se o número sorteado será <strong>par</strong> ou
+                  <strong>ímpar</strong>.
+                </p>
+                <p>
+                  Para jogar, basta escolher uma das opções — par ou ímpar — e
+                  definir o valor que deseja apostar. Em seguida, a roleta é
+                  girada
+                  e uma bola é lançada sobre ela, caindo aleatoriamente em um
+                  dos
+                  números do disco.
+                </p>
+                <p>
+                  Se o número sorteado corresponder ao tipo que você escolheu
+                  (por
+                  exemplo, você apostou em “ímpar” e caiu 17), você vence a
+                  rodada e
+                  recebe <strong>2x o valor apostado</strong> de volta.
+                </p>
+                <p>
+                  É um jogo rápido, simples e cheio de adrenalina. Basta confiar
+                  na
+                  sua intuição, fazer sua aposta e torcer para a roleta girar a
+                  seu
+                  favor!
+                </p>
+              </div>
+              <div class="modal-footer ">
+                <button type="button" class="btn btn-secondary"
+                  data-bs-dismiss="modal">
+                  Fechar
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-  </section>
 
+        <!-- Segundo molda: Black Jack -->
+        <div class="modal fade" id="modalCard2" data-bs-backdrop="static"
+          data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="modalCard2Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalCard2Label">
+                  Detalhes do Black Jack
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-thumbnail " id="modal__img"
+                  src="./assets/black-jack.webp" alt="roleta" />
+                <h4>Como funciona</h4>
+                <p>
+                  O Blackjack, também conhecido como 21, é um dos jogos de
+                  cartas
+                  mais clássicos e populares dos cassinos. O objetivo é simples:
+                  somar cartas que cheguem o mais próximo possível de 21, sem
+                  ultrapassar esse valor.
+                </p>
+                <p>
+                  Cada jogador recebe duas cartas, assim como o dealer (a
+                  "banca").
+                  As cartas numéricas valem seu número correspondente, as
+                  figuras
+                  (Valete, Dama e Rei) valem 10 pontos, e o Ás pode valer 1 ou
+                  11,
+                  dependendo do que for mais vantajoso para a sua mão.
+                </p>
+                <p>
+                  Durante a rodada, você pode escolher entre pedir mais cartas
+                  ("Hit") ou parar ("Stand"). O objetivo é tentar vencer o
+                  dealer
+                  fazendo uma pontuação maior que a dele — sem passar de 21. Se
+                  você
+                  ultrapassar esse valor, perde automaticamente ("estoura").
+                </p>
+                <p>
+                  Se a sua pontuação for maior que a do dealer, ou se ele
+                  estourar e
+                  você não, você ganha a rodada e recebe
+                  <strong>2x o valor apostado</strong>. É um jogo de estratégia
+                  e
+                  emoção, onde cada decisão pode ser a chave para a vitória!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"
+                  data-bs-dismiss="modal">
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <script>
+        <!-- Terciero modal: Roleta das Cores -->
+        <div class="modal fade" id="modalCard3" data-bs-backdrop="static"
+          data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="modalCard3Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalCard3Label">
+                  Detalhes da Roleta das Cores
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-thumbnail " id="modal__img"
+                  src="./assets/roleta-cor.webp" alt="roleta" />
+                <h4>Como funciona</h4>
+                <p>
+                  A Roleta das Cores é um jogo simples, rápido e baseado
+                  totalmente
+                  na sorte. Para jogar, você escolhe uma das quatro cores
+                  disponíveis: <strong>vermelho</strong>, <strong>azul</strong>,
+                  <strong>amarelo</strong> ou <strong>verde</strong>. Depois
+                  disso,
+                  você define o valor da sua aposta e gira a roleta.
+                </p>
+                <p>
+                  Quando a roleta parar, a cor sorteada será revelada. Se for
+                  exatamente a cor que você escolheu, você vence a rodada e
+                  recebe
+                  <strong>2x o valor apostado</strong> direto no seu saldo. Por
+                  exemplo, se apostar R$20 na cor azul e ela for sorteada, você
+                  ganha R$40!
+                </p>
+                <p>
+                  É uma maneira divertida de testar sua sorte com mecânica
+                  simples e
+                  visual chamativo. Escolha sua cor preferida, gire a roleta e
+                  torça
+                  para ela parar na sua aposta. Boa sorte!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"
+                  data-bs-dismiss="modal">
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quarto molda: Caça -->
+        <div class="modal fade" id="modalCard4" data-bs-backdrop="static"
+          data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="modalCard4Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalCard4Label">
+                  Detalhes do Caça-Níquel
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-thumbnail " id="modal__img"
+                  src="./assets/niquel.webp" alt="roleta" />
+                <h4>Como funciona</h4>
+                <p>
+                  O caça-níquel é uma máquina de sorte que oferece uma
+                  experiência
+                  emocionante e simples de jogar. Neste jogo, você pode apostar
+                  um
+                  valor do seu saldo e tentar a sorte girando os rolos da
+                  máquina.
+                  Existem três combinações principais que podem garantir sua
+                  vitória: <strong>cereja</strong>, <strong>estrela</strong> e
+                  <strong>diamante</strong>. Cada uma dessas combinações
+                  representa
+                  uma chance de ganhar o dobro do valor apostado.
+                </p>
+                <p>
+                  Ao iniciar a rodada, os símbolos giram e param aleatoriamente.
+                  Se
+                  o resultado for a combinação exata do símbolo em que você
+                  apostou,
+                  você recebe <strong>2x o valor apostado</strong> direto no seu
+                  saldo. Por exemplo, se apostar R$10 e a combinação sorteada
+                  for a
+                  que você escolheu, você receberá R$20!
+                </p>
+                <p>
+                  É um jogo de pura sorte, rápido, dinâmico e perfeito para quem
+                  busca diversão e a possibilidade de multiplicar os ganhos em
+                  poucos segundos. Faça sua aposta, escolha seu símbolo da sorte
+                  e
+                  boa sorte no giro!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"
+                  data-bs-dismiss="modal">
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modalImagemAmpliada" tabindex="-1"
+          aria-labelledby="imagemAmpliadaLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark border border-gold">
+              <div class="modal-header border-0">
+                <h5 class="modal-title text-gold" id="imagemAmpliadaLabel"></h5>
+                <button type="button" class="btn-close btn-close-white"
+                  data-bs-dismiss="modal" aria-label="Fechar"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img id="imagemExibida" src alt="Imagem ampliada"
+                  class="img-fluid rounded-3 border border-gold" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
     document.addEventListener("DOMContentLoaded", function () {
       const galeriaImgs = document.querySelectorAll("#galeria-mid img");
       galeriaImgs.forEach((img) => {
@@ -671,11 +888,13 @@
     });
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-  <!-- Lightbox2 JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-</body>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+          crossorigin="anonymous"></script>
+        <!-- Lightbox2 JS -->
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+      </body>
 
-</html>
+    </html>
