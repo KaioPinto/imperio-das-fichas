@@ -26,6 +26,10 @@
   --cor-texto-suave: var(--cor-letras);
 }
 
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -192,21 +196,27 @@ h2,
 }
 
 .modal-content {
-  background-color: var(--black);
   color: var(--white);
   border: 2px solid var(--gold);
   border-radius: 12px;
+}
+
+.modal-body,
+.modal-header,
+.modal-foter {
+  background-color: var(--cor-fundo-pagina) !important;
+  border: 2px solid var(--gold);
+  color: var(--cor-letras);
+}
+
+.modal-body > h4 {
+  padding-top: 10px;
 }
 
 .modal-title {
   color: var(--gold);
   font-family: "Bebas Neue", sans-serif;
   text-shadow: var(--hover-glow);
-}
-
-.img-thumbnail {
-  border-radius: 10px;
-  border: 2px solid var(--gold);
 }
 
 .border-gold {
@@ -218,10 +228,10 @@ h2,
 }
 
 /* Fix para mesma altura dos cards */
-.row-cols-1>.col,
-.row-cols-sm-2>.col,
-.row-cols-md-3>.col,
-.row-cols-lg-4>.col {
+.row-cols-1 > .col,
+.row-cols-sm-2 > .col,
+.row-cols-md-3 > .col,
+.row-cols-lg-4 > .col {
   display: flex;
   flex-direction: column;
 }
@@ -370,9 +380,11 @@ body {
 
 .premios__destaque {
   margin-bottom: 20px;
-  background: linear-gradient(45deg,
-      var(--cor-secundaria),
-      var(--cor-fundo-clara));
+  background: linear-gradient(
+    45deg,
+    var(--cor-secundaria),
+    var(--cor-fundo-clara)
+  );
   padding: 15px;
   border-radius: 4px;
   display: inline-block;
@@ -383,48 +395,6 @@ body {
   color: var(--cor-primaria);
   text-shadow: 2px 2px 4px var(--cor-fundo);
   font-family: "Times New Roman", serif;
-}
-
-/* Responsividade */
-@media (max-width: 968px) {
-  .banner {
-    flex-direction: column;
-  }
-
-  .banner__imagem {
-    order: -1;
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 768px) {
-  .banner__titulo {
-    font-size: 2rem;
-  }
-
-  .jogos-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .premios {
-    justify-content: center;
-  }
-
-  .premios__cartao {
-    width: 100%;
-  }
-
-  #galeria-mid .card-img-top {
-    height: 160px;
-  }
-
-  #galeria-mid .card-body h5 {
-    font-size: 1.1rem;
-  }
-
-  #galeria-mid img {
-    height: 160px;
-  }
 }
 
 /* ==== FAQ e CADASTRO ==== */
@@ -522,7 +492,6 @@ body {
   color: var(--black);
   border: none;
   border-radius: 10px;
-  font-weight: bold;
 }
 
 .accordion .accordion-item.faq__item {
@@ -530,4 +499,57 @@ body {
   border-radius: 12px;
   overflow: hidden;
   background-color: var(--white);
+}
+
+.divisao {
+  background-color: var(--cor-fundo);
+  margin: 2rem 10rem;
+  border-radius: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner__imagem {
+    order: -1;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__titulo {
+    font-size: 2rem;
+  }
+
+  .jogos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .premios {
+    justify-content: center;
+  }
+
+  .premios__cartao {
+    width: 100%;
+  }
+
+  #galeria-mid .card-img-top {
+    height: 160px;
+  }
+
+  #galeria-mid .card-body h5 {
+    font-size: 1.1rem;
+  }
+
+  #galeria-mid img {
+    height: 160px;
+  }
+
+  .divisao {
+    background-color: var(--cor-fundo);
+    margin: 0;
+  }
 }
