@@ -1,0 +1,250 @@
+:root {
+   --gold: #d4af37;
+   --wine: #4b0c1e;
+   --red: #b1212f;
+   --felt-green: #146b3a;
+   --black: #1a1a1a;
+   --neon-purple: #7a1aff;
+   --neon-blue: #1ac1ff;
+   --white: #f5f5f5;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   height: 100vh;
+   color: white;
+}
+
+.hero {
+   position: relative;
+   min-height: 70vh;
+   background-image: url(./Cassino.webp);
+   opacity: 1.3;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Primeira sobreposição (mais clara) */
+.hero::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.37);
+   /* ajuste a opacidade */
+   z-index: 1;
+}
+
+main > * {
+   position: relative;
+   z-index: 3;
+   padding: 20px;
+}
+
+/* Conteúdo acima das sobreposições */
+.hero > * {
+   position: relative;
+   z-index: 3;
+   color: white;
+}
+
+.hero .navbar {
+   position: relative;
+   z-index: 3;
+   /* display: flex;
+   flex-wrap: wrap;
+   justify-content: end; */
+   background: rgba(0, 0, 0, 0.08); /* um leve fundo escuro para contraste */
+   backdrop-filter: blur(1.5px); /* faz o blur real do que está por trás */
+   -webkit-backdrop-filter: blur(1.5px); /* suporte Safari */
+}
+.hero .navbar-toggler {
+   background-color: var(--gold);
+   font-size: 2.4rem;
+}
+
+.hero .container-fluid {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 2rem;
+}
+
+/* .hero .navbar-collapse {
+   display: flex;
+   justify-content: flex-end;
+} */
+
+.hero .navbar-nav {
+   display: flex;
+   gap: 2rem;
+   padding: 1rem;
+}
+
+.hero .navbar-nav .nav-link {
+   color: white;
+   font-size: 2.2rem;
+   transition: transform 0.3s ease;
+}
+
+.hero .navbar-nav .nav-link:hover {
+   transform: scale(1.1);
+   color: var(--gold);
+}
+
+nav a {
+   color: white;
+   text-decoration: none;
+   padding: 10px 20px;
+   transition: background-color 0.3s ease;
+   font-size: 2.4rem;
+}
+
+section.hero__text {
+   justify-self: center;
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   z-index: 3;
+   margin: 4rem auto 0 auto;
+   width: 100%;
+   max-width: 80rem;
+   padding: 2rem 2rem;
+   background: rgba(0, 0, 0, 0.08); /* um leve fundo escuro para contraste */
+   backdrop-filter: blur(1.5px); /* faz o blur real do que está por trás */
+   -webkit-backdrop-filter: blur(1.5px); /* suporte Safari */
+   border-radius: 2rem;
+   max-height: 43rem;
+   height: 100%;
+   text-align: left;
+}
+section.hero__text h1 {
+   z-index: 2;
+   font-size: 7rem;
+   text-align: left;
+}
+
+section.hero__text h2 {
+   z-index: 2;
+   font-size: 4rem;
+   margin-top: 2.4px;
+   margin-bottom: 1.6rem;
+   color: var(--gold);
+}
+section.hero__text p {
+   z-index: 2;
+   font-size: 2.2rem;
+   color: var(--white);
+}
+section.hero__text span {
+   z-index: 2;
+   font-weight: bold;
+   font-size: 2.4rem;
+   margin-top: 1.6px;
+   margin-bottom: 2rem;
+   color: var(--gold);
+}
+
+section.hero__text div {
+   text-align: left;
+}
+
+section.hero__text a {
+   z-index: 2;
+   text-align: center;
+   display: inline-flex;
+   align-self: start;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem 2rem;
+   background-color: var(--wine);
+   color: var(--black);
+   font-weight: bold;
+   text-decoration: none;
+   font-size: 2.6rem;
+   border-radius: 5px;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   color: var(--white);
+}
+section.hero__text a:hover {
+   background-color: var(--red);
+   transform: scale(1.05);
+}
+
+@media (max-width: 780px) {
+   section.hero__text h1 {
+      font-size: 5rem;
+   }
+   section.hero__text h2 {
+      font-size: 3.2rem;
+   }
+   section.hero__text p {
+      font-size: 1.8rem;
+   }
+   section.hero__text span {
+      font-size: 2rem;
+   }
+   section.hero__text a {
+      font-size: 2.2rem;
+      padding: 0.8rem 1.6rem;
+   }
+
+   section.hero__text_ico {
+      width: 1rem;
+      height: auto;
+   }
+}
+
+@media (max-width: 530px) {
+   section.hero__text h1 {
+      font-size: 4rem;
+   }
+   section.hero__text h2 {
+      font-size: 2.8rem;
+   }
+   section.hero__text p {
+      font-size: 1.6rem;
+   }
+   section.hero__text span {
+      font-size: 1.8rem;
+   }
+   section.hero__text a {
+      font-size: 2rem;
+      padding: 0.6rem 1.2rem;
+   }
+}
+
+@media (max-width: 420px) {
+   section.hero__text h1 {
+      font-size: 3.2rem;
+   }
+   section.hero__text h2 {
+      font-size: 2.4rem;
+   }
+   section.hero__text p {
+      font-size: 1.4rem;
+   }
+   section.hero__text span {
+      font-size: 1.6rem;
+   }
+   section.hero__text a {
+      font-size: 1.8rem;
+      padding: 0.4rem 1rem;
+   }
+}
