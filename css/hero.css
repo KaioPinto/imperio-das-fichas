@@ -15,14 +15,20 @@
    box-sizing: border-box;
 }
 
-html {
+/* html {
    font-size: 62.5%;
+} */
+
+body {
+   height: 100vh;
+   color: white;
 }
 
 .hero {
    position: relative;
    min-height: 70vh;
-   background-image: url(/imperio-das-fichas/assets/Cassino.webp);
+   background-image: url(../assets/Cassino.webp);
+   opacity: 1;
    background-size: cover;
    background-position: center;
    display: flex;

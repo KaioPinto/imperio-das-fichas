@@ -5,18 +5,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500;700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
   <link rel="shortcut icon" href="./assets/favicon-32x32.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/hero.css" />
 
   <title>Império das fichas</title>
 </head>
 
 <body>
+  <section class="hero">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img src="./assets/ficha_dourada.ico" alt=""></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end " id="navbarContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre o jogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Funcionalidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Requisitos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- <section class="hero__text">
+      <h1 class="">Império das fichas</h1>
+      <div class="">
+        <h2>Onde o luxo encontra a sorte.</h2>
+        <div>
+          <p>Bem-vindo ao cassino online mais exclusivo da web. Domine a arte do jogo, acumule riquezas e construa seu império com classe. <i><img class="hero__text_ico" src="./assets/ficha_dourada.ico" alt="ficha dourada" srcset=""></i> Fichas douradas, <i><img class="hero__text_ico" src="./assets/dado.ico" alt="dado" srcset=""></i> mesas refinadas e <i><img class="hero__text_ico" src="./assets/maleta.ico" alt="maleta" srcset=""></i> prêmios dignos da realeza aguardam você.</p>
+
+          <p><span>Entre para o seleto império dos vencedores.</span></p>
+          <a href="#"><i><img class="hero__text_ico" src="./assets/coroa.ico" alt="coroa" srcset=""></i>Jogar com Estilo</a>
+        </div>
+      </div>
+    </section> -->
+  </section>
+
   <main class="container text-center">
     <div class="cassino">
       <section class="banner">
@@ -207,8 +258,7 @@
         </div>
         <div class="col-6 col-md-4 col-lg-2">
           <a href="./assets/galeria/grupo-jogando.webp" data-lightbox="galeria" data-title="Grupo jogando Caça-Níquel">
-            <img src="./assets/galeria/grupo-jogando.webp" class="img-fluid rounded shadow"
-              alt="Grupo jogando Caça-Níquel" />
+            <img src="./assets/galeria/grupo-jogando.webp" class="img-fluid rounded shadow" alt="Grupo jogando Caça-Níquel" />
           </a>
         </div>
         <div class="col-6 col-md-4 col-lg-2">
@@ -218,8 +268,7 @@
         </div>
         <div class="col-6 col-md-4 col-lg-2">
           <a href="./assets/galeria/jogadora-vencendo.webp" data-lightbox="galeria" data-title="Jogadora vencendo">
-            <img src="./assets/galeria/jogadora-vencendo.webp" class="img-fluid rounded shadow"
-              alt="Jogadora vencendo" />
+            <img src="./assets/galeria/jogadora-vencendo.webp" class="img-fluid rounded shadow" alt="Jogadora vencendo" />
           </a>
         </div>
       </div>
@@ -229,8 +278,7 @@
   <!-- Apenas o conteúdo dos moldais -->
 
   <!-- Primeiro molda: Roleta clássica -->
-  <div class="modal fade" id="modalCard1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="modalCard1Label" aria-hidden="true">
+  <div class="modal fade" id="modalCard1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalCard1Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
@@ -275,8 +323,7 @@
   </div>
 
   <!-- Segundo molda: Black Jack -->
-  <div class="modal fade" id="modalCard2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="modalCard2Label" aria-hidden="true">
+  <div class="modal fade" id="modalCard2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalCard2Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
@@ -323,8 +370,7 @@
   </div>
 
   <!-- Terciero modal: Roleta das Cores -->
-  <div class="modal fade" id="modalCard3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="modalCard3Label" aria-hidden="true">
+  <div class="modal fade" id="modalCard3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalCard3Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
@@ -366,8 +412,7 @@
   </div>
 
   <!-- Quarto molda: Caça -->
-  <div class="modal fade" id="modalCard4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="modalCard4Label" aria-hidden="true">
+  <div class="modal fade" id="modalCard4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalCard4Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
@@ -411,8 +456,7 @@
     </div>
   </div>
 
-  <div class="modal fade" id="modalImagemAmpliada" tabindex="-1" aria-labelledby="imagemAmpliadaLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="modalImagemAmpliada" tabindex="-1" aria-labelledby="imagemAmpliadaLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content bg-dark border border-gold">
         <div class="modal-header border-0">
@@ -448,24 +492,21 @@
                 <label for="nome" class="form-label cadastro__label">
                   <i class="fas fa-user me-1 me-md-2 cadastro__icone"></i> Nome Completo
                 </label>
-                <input type="text" class="form-control form-control-sm cadastro__input" id="nome"
-                  placeholder="Seu nome completo" required>
+                <input type="text" class="form-control form-control-sm cadastro__input" id="nome" placeholder="Seu nome completo" required>
               </div>
 
               <div class="mb-3">
                 <label for="email" class="form-label cadastro__label">
                   <i class="fas fa-envelope me-1 me-md-2 cadastro__icone"></i> E-mail
                 </label>
-                <input type="email" class="form-control form-control-sm cadastro__input" id="email"
-                  placeholder="seu@email.com" required>
+                <input type="email" class="form-control form-control-sm cadastro__input" id="email" placeholder="seu@email.com" required>
               </div>
 
               <div class="mb-3">
                 <label for="telefone" class="form-label cadastro__label">
                   <i class="fas fa-phone me-1 me-md-2 cadastro__icone"></i> Telefone
                 </label>
-                <input type="tel" class="form-control form-control-sm cadastro__input" id="telefone"
-                  placeholder="(99) 99999-9999">
+                <input type="tel" class="form-control form-control-sm cadastro__input" id="telefone" placeholder="(99) 99999-9999">
               </div>
 
               <div class="mb-3">
@@ -530,15 +571,12 @@
           <div class="accordion" id="faqAccordion">
             <div class="accordion-item mb-2 mb-md-3 faq__item">
               <h2 class="accordion-header" id="heading1">
-                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false"
-                  aria-controls="faq1">
+                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
                   <i class="fas fa-play-circle me-2 me-md-3 faq__icone"></i>
                   Como posso começar a jogar no Império das Fichas?
                 </button>
               </h2>
-              <div id="faq1" class="accordion-collapse collapse" aria-labelledby="heading1"
-                data-bs-parent="#faqAccordion">
+              <div id="faq1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
                 <div class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
                   Para começar a jogar, basta fazer seu cadastro gratuito e realizar o
                   Download do Jogo. Após confirmar seu e-mail, você receberá
@@ -551,15 +589,12 @@
 
             <div class="accordion-item mb-2 mb-md-3 faq__item">
               <h2 class="accordion-header" id="heading2">
-                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false"
-                  aria-controls="faq2">
+                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
                   <i class="fas fa-coins me-2 me-md-3 faq__icone"></i>
                   Como funcionam as fichas no jogo?
                 </button>
               </h2>
-              <div id="faq2" class="accordion-collapse collapse" aria-labelledby="heading2"
-                data-bs-parent="#faqAccordion">
+              <div id="faq2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion">
                 <div class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
                   As fichas são a moeda do jogo que você usa para apostar.
                   <strong class="faq__destaque">A cada vitória, você multiplica suas
@@ -571,15 +606,12 @@
 
             <div class="accordion-item mb-2 mb-md-3 faq__item">
               <h2 class="accordion-header" id="heading3">
-                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
-                  aria-controls="faq3">
+                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
                   <i class="fas fa-gamepad me-2 me-md-3 faq__icone"></i>
                   Quais jogos estão disponíveis?
                 </button>
               </h2>
-              <div id="faq3" class="accordion-collapse collapse" aria-labelledby="heading3"
-                data-bs-parent="#faqAccordion">
+              <div id="faq3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion">
                 <div class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
                   Oferecemos uma variedade completa: <strong class="faq__destaque">Roleta das
                     Cores</strong>
@@ -595,15 +627,12 @@
 
             <div class="accordion-item mb-2 mb-md-3 faq__item">
               <h2 class="accordion-header" id="heading4">
-                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false"
-                  aria-controls="faq4">
+                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
                   <i class="fas fa-trophy me-2 me-md-3 faq__icone"></i>
                   Existe ranking dos melhores jogadores?
                 </button>
               </h2>
-              <div id="faq4" class="accordion-collapse collapse" aria-labelledby="heading4"
-                data-bs-parent="#faqAccordion">
+              <div id="faq4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faqAccordion">
                 <div class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
                   Sim! Os <strong class="faq__destaque">jogadores que mais vencem
                     partidas</strong>
@@ -615,15 +644,12 @@
 
             <div class="accordion-item mb-2 mb-md-3 faq__item">
               <h2 class="accordion-header" id="heading5">
-                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false"
-                  aria-controls="faq5">
+                <button class="accordion-button collapsed py-3 py-md-4 px-4 small fs-sm-6 fs-md-5 faq__botao" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
                   <i class="fas fa-shield-alt me-2 me-md-3 faq__icone"></i>
                   O jogo é seguro e confiável?
                 </button>
               </h2>
-              <div id="faq5" class="accordion-collapse collapse" aria-labelledby="heading5"
-                data-bs-parent="#faqAccordion">
+              <div id="faq5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faqAccordion">
                 <div class="accordion-body py-3 py-md-4 px-3 px-md-4 small faq__resposta">
                   Sim. Utilizamos <strong class="faq__destaque">protocolos de segurança</strong>
                   para
@@ -669,9 +695,7 @@
     });
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   <!-- Lightbox2 JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
